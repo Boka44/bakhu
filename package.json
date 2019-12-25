@@ -1,0 +1,16 @@
+{
+  "name": "bakhu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^4.12.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node-sass --watch scss -o css"
+  },
+  "author": "",
+  "license": "ISC"
+}
