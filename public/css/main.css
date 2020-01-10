@@ -349,7 +349,7 @@ button:focus {
       color: #fff;
       font-size: 42px;
       font-weight: 700;
-      margin-bottom: 25px; }
+      margin-top: 14px; }
     #hero-area .contents p {
       font-size: 14px;
       color: #fff;
@@ -359,6 +359,21 @@ button:focus {
     #hero-area .contents .btn {
       margin: 25px 25px 0px 0px;
       text-transform: uppercase; }
+    #hero-area .contents .ticker {
+      padding: 40px;
+      margin-top: -25px;
+      margin-left: 75px;
+      margin-right: 75px;
+      background-color: #4d2275;
+      opacity: .87;
+      height: 200px;
+      width: 200px;
+      border-radius: 50%;
+      display: inline-block; }
+      #hero-area .contents .ticker p {
+        font-size: 30px; }
+      #hero-area .contents .ticker .date {
+        font-size: 11px; }
   #hero-area .banner_bottom_btn {
     margin-top: 40px; }
     #hero-area .banner_bottom_btn i {
@@ -375,7 +390,7 @@ button:focus {
    4. Navbar Style
    ========================================================================== */
 #nav-logo {
-  width: 25%; }
+  width: 10%; }
 
 .navbar-brand {
   position: relative;
@@ -860,35 +875,23 @@ button:focus {
 #blog {
   background-color: #595cff;
   color: white; }
-  #blog .blog-item-wrapper {
-    border-radius: 0px;
-    -webkit-transition: transform 0.2s linear, -webkit-box-shadow 0.2s linear;
-    -moz-transition: transform 0.2s linear, -moz-box-shadow 0.2s linear;
-    transition: transform 0.2s linear, box-shadow 0.2s linear; }
-  #blog .blog-item-wrapper:hover .blog-item-img:before {
-    opacity: 1;
-    height: 100%;
-    width: 100%; }
-  #blog .blog-item-img {
-    position: relative; }
-    #blog .blog-item-img img {
-      width: 100%; }
-  #blog .blog-item-text {
-    padding: 20px 0; }
-    #blog .blog-item-text .btn-rm:hover {
+  #blog #blog-container .hrBlog {
+    margin-left: 15px;
+    margin-right: 15px;
+    border-top: 1px solid #868e96; }
+  #blog #blog-container .blogItem {
+    padding: 0px 15px 15px 15px; }
+    #blog #blog-container .blogItem .blogDate {
+      font-size: 1.2rem;
+      display: table-cell;
+      border-bottom: 2px solid black; }
+    #blog #blog-container .blogItem .blogTitle {
+      font-size: 2rem;
+      font-weight: normal;
       color: white; }
-    #blog .blog-item-text h3 {
-      line-height: 26px;
-      font-size: 18px;
-      font-weight: 700;
-      margin-bottom: 10px; }
-      #blog .blog-item-text h3 a {
-        color: white; }
-        #blog .blog-item-text h3 a:hover {
-          color: white; }
-    #blog .blog-item-text p {
-      line-height: 25px;
-      margin-bottom: 20px; }
+      #blog #blog-container .blogItem .blogTitle:hover {
+        transition: ease-in-out;
+        font-weight: bold; }
 
 /* ==========================================================================
   14. Contact Us

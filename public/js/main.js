@@ -164,5 +164,56 @@
    ========================================================================== */
   $('#loader').fadeOut();
 
+
+/*
+   Press Release
+   ========================================================================== */
+
+   function constructBlogItem(date, title, link, isLast) {
+     let parent = $('#blog-container');
+     let dateElement = "<div class='blogDate'>" + date + "</div>";
+     let titleElement = "<a class='blogTitle' href='" + link + "'>" + title + "</a>";
+     let child = "<div class='blogItem col-sm-12'>" + dateElement + titleElement + "</div>";
+     if(!isLast) {
+       child += "<hr class='hrBlog col-sm-12'>";
+     };
+     parent.append(child);
+   };
+
+  let pressArray = [
+    {
+      date: "December 10, 2019",
+      title: "Lorem Ipsum dolor sit amet, consectetur adipisicing elit.",
+      link: ""
+    },
+    {
+      date: "December 13, 2019",
+      title: "Lorem Ipsum dolor sit amet, consectetur adipisicing elit.",
+      link: ""
+    },
+    {
+      date: "December 14, 2019",
+      title: "Lorem Ipsum dolor sit amet, consectetur adipisicing elit.",
+      link: ""
+    },
+    {
+      date: "December 16, 2019",
+      title: "Lorem Ipsum dolor sit amet, consectetur adipisicing elit.",
+      link: ""
+    },
+    {
+      date: "December 19, 2019",
+      title: "Lorem Ipsum dolor sit amet, consectetur adipisicing elit.",
+      link: ""
+    }
+  ];
+
+  pressArray.forEach((e, i) => {
+    // account for overflow, and create pagination
+    var isLast;
+    pressArray.length == i + 1 ? isLast = true : isLast = false;
+    constructBlogItem(e.date, e.title, e.link, isLast);
+  });
+
 }(jQuery));
 

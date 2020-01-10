@@ -389,7 +389,7 @@ $letter-spacing: 0px;
 				color: #fff;
 				font-size: 42px;
 				font-weight: 700;
-				margin-bottom: 25px;
+				margin-top: 14px;
 			}
 			p{
 				font-size: 14px;
@@ -399,7 +399,29 @@ $letter-spacing: 0px;
 				letter-spacing: 0.5px;
 			}
 			.btn{margin: 25px 25px 0px 0px; text-transform: uppercase;}
+			.ticker {
+				padding: 40px;
+				margin-top: -25px;
+				margin-left: 75px;
+				margin-right: 75px;
+				// border: 2px black solid;
+				background-color: #4d2275;
+				opacity: .87;
+				height: 200px;
+				width: 200px;
+				border-radius: 50%;
+				display: inline-block;
+
+				p {
+					font-size: 30px;
+				}
+
+				.date {
+					font-size: 11px;
+				}
+			}
 		}
+
 		.banner_bottom_btn{
 			margin-top: 40px;
 			i{
@@ -420,7 +442,7 @@ $letter-spacing: 0px;
    4. Navbar Style
    ========================================================================== */
 	#nav-logo {
-		width: 25%;
+		width: 10%;
 	}
 	.navbar-brand{
 	  position: relative;
@@ -1004,48 +1026,73 @@ $letter-spacing: 0px;
   #blog{
 	background-color: $preset;
 	color: white;
+
+	#blog-container {
+		.hrBlog {
+			margin-left: 15px;
+			margin-right: 15px;	
+			border-top: 1px solid #868e96;
+		}
+		.blogItem {
+			padding: 0px 15px 15px 15px;
+			.blogDate {
+				font-size: 1.2rem;
+				display: table-cell;
+				border-bottom: 2px solid black;
+			}
+			.blogTitle {
+				&:hover{
+					transition: ease-in-out;
+					font-weight: bold;
+				}
+				font-size: 2rem;
+				font-weight: normal;
+				color: white;
+			}
+		}
+	}
 	
-    .blog-item-wrapper{
-    //   background: #fff;
-      border-radius: 0px;     
-      -webkit-transition: transform 0.2s linear, -webkit-box-shadow 0.2s linear;
-      -moz-transition: transform 0.2s linear, -moz-box-shadow 0.2s linear;
-      transition: transform 0.2s linear, box-shadow 0.2s linear;
-    }
-    .blog-item-wrapper:hover .blog-item-img:before{
-    	opacity: 1;
-    	height: 100%;
-    	width: 100%;
-    }
-    .blog-item-img{
-      position: relative; 
-      img{
-        width: 100%;
-      }
-    }
-    .blog-item-text{
-	   padding: 20px 0;  
-	   .btn-rm:hover {
-		color: white;
-	   }    
-      h3{
-        line-height: 26px;
-        font-size: 18px;
-        font-weight: 700;
-		margin-bottom: 10px;
-		// color: #3335b3;
-        a{
-			  // color: #333;
-			  color: white;
-	      	&:hover{
-	      		color: white;
-	      	}
-	    }
-      }
-      p{
-      		line-height: 25px; margin-bottom: 20px;
-      	}    
-      }
+    // .blog-item-wrapper{
+    // //   background: #fff;
+    //   border-radius: 0px;     
+    //   -webkit-transition: transform 0.2s linear, -webkit-box-shadow 0.2s linear;
+    //   -moz-transition: transform 0.2s linear, -moz-box-shadow 0.2s linear;
+    //   transition: transform 0.2s linear, box-shadow 0.2s linear;
+    // }
+    // .blog-item-wrapper:hover .blog-item-img:before{
+    // 	opacity: 1;
+    // 	height: 100%;
+    // 	width: 100%;
+    // }
+    // .blog-item-img{
+    //   position: relative; 
+    //   img{
+    //     width: 100%;
+    //   }
+    // }
+    // .blog-item-text{
+	//    padding: 20px 0;  
+	//    .btn-rm:hover {
+	// 	color: white;
+	//    }    
+    //   h3{
+    //     line-height: 26px;
+    //     font-size: 18px;
+    //     font-weight: 700;
+	// 	margin-bottom: 10px;
+	// 	// color: #3335b3;
+    //     a{
+	// 		  // color: #333;
+	// 		  color: white;
+	//       	&:hover{
+	//       		color: white;
+	//       	}
+	//     }
+    //   }
+    //   p{
+    //   		line-height: 25px; margin-bottom: 20px;
+    //   	}    
+    //   }
   }
 
  

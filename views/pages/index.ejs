@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="author" content="Grayrids">
     <title>Bakhu Holdings</title>
+    <link rel="shortcut icon" type="image/png" href="/img/logo/favicon.ico"/>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -32,7 +33,7 @@
         <div class="container">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
-            <a href="index.html" class="navbar-brand"><img class="img-fulid" id="nav-logo" src="img/logo1.png" alt=""></a>
+            <a  class="navbar-brand"><img class="img-fulid" id="nav-logo" src="img/logo/white2.png" alt=""></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
               <i class="lnr lnr-menu"></i>
             </button>
@@ -88,10 +89,20 @@
       <!-- Navbar End -->   
       <div class="container">      
         <div class="row justify-content-md-center">
-          <div class="col-md-10">
+          <div class="col-lg-5 col-md-12 col-sm-12">
             <div class="contents text-center">
               <h1 class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0.3s">Bakhu Holdings</h1>
               <p class="lead  wow fadeIn" data-wow-duration="1000ms" data-wow-delay="400ms">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+              <!-- <a href="#" class="btn btn-common wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">Download</a> -->
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-12 col-sm-12">
+            <div class="contents text-center">
+              <div class="ticker">
+                <h1 class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0.3s"><%= ticker.symbol %></h1>
+                <p class="lead  wow fadeIn" data-wow-duration="1000ms" data-wow-delay="400ms">$<%= ticker.latestPrice %></p>
+                <p class="lead  wow fadeIn date" data-wow-duration="1000ms" data-wow-delay="400ms"><%= ticker.formattedDate %></p>
+              </div>
               <!-- <a href="#" class="btn btn-common wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">Download</a> -->
             </div>
           </div>
@@ -286,9 +297,8 @@
           <hr class="lines" style="border-top-color: white;">
           <p class="section-subtitle white-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, dignissimos! <br> Lorem ipsum dolor sit amet, consectetur.</p>
         </div>
-        <div class="row">
-          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 blog-item">
-            <!-- Blog Item Starts -->
+        <div class="row" id="blog-container">
+          <!-- <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 blog-item">
             <div class="blog-item-wrapper wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
               <div class="blog-item-img">
                 <a href="">
@@ -305,50 +315,7 @@
                 <a href="" class="btn-rm">Read More <i class="lnr lnr-arrow-right"></i></a>
               </div>
             </div>
-            <!-- Blog Item Wrapper Ends-->
-          </div>
-
-          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 blog-item">
-            <!-- Blog Item Starts -->
-            <div class="blog-item-wrapper wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="600ms">
-              <div class="blog-item-img">
-                <a href="">
-                  <img src="img/blog/img2.jpg" alt="">
-                </a>                
-              </div>
-              <div class="blog-item-text"> 
-                <h3>
-                  <a href="">Lorem ipsum dolor sit amet</a>
-                </h3>
-                <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua... 
-                </p>
-                <a href="" class="btn-rm">Read More <i class="lnr lnr-arrow-right"></i></a>
-              </div>
-            </div>
-            <!-- Blog Item Wrapper Ends-->
-          </div>
-
-          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 blog-item">
-            <!-- Blog Item Starts -->
-            <div class="blog-item-wrapper wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="900ms">
-              <div class="blog-item-img">
-                <a href="">
-                  <img src="img/blog/img3.jpg" alt="">
-                </a>                
-              </div>
-              <div class="blog-item-text"> 
-                <h3>
-                  <a href="">Lorem ipsum dolor sit amet</a>
-                </h3>
-                <p>
-                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua... 
-                </p>
-                <a href="" class="btn-rm">Read More <i class="lnr lnr-arrow-right"></i></a>
-              </div>
-            </div>
-            <!-- Blog Item Wrapper Ends-->
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
