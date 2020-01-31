@@ -8,9 +8,10 @@ tickerController.get = () => {
         Ticker.findAllTickers()
         .then((data) => {
             let tickerObj = data[0];
-            tickerObj.latestPrice = parseInt(tickerObj.latestPrice).toFixed(2);
-            tickerObj.formattedDate = moment(tickerObj.updatedAt).format('MMMM Do YYYY');
-            console.log(tickerObj.formattedDate)
+            tickerObj.formattedDate = moment(tickerObj.updatedAt).format('MMMM Do YYYY'); 
+            var num = tickerObj.latestPrice;
+            var with2Decimals = num.toString().match(/^-?\d+(?:\.\d{0,2})?/)[0];
+            tickerObj.latestPrice = with2Decimals;
             resolve(tickerObj);
         })
     })
