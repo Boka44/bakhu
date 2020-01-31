@@ -172,7 +172,7 @@
    function constructBlogItem(date, title, link, isLast) {
      let parent = $('#blog-container');
      let dateElement = "<div class='blogDate'>" + date + "</div>";
-     let titleElement = "<a class='blogTitle' href='" + link + "'>" + title + "</a>";
+     let titleElement = "<a class='blogTitle' href='" + link + "' target='_blank'>" + title + "</a>";
      let child = "<div class='blogItem col-sm-12'>" + dateElement + titleElement + "</div>";
      if(!isLast) {
        child += "<hr class='hrBlog col-sm-12'>";
@@ -182,29 +182,39 @@
 
   let pressArray = [
     {
-      date: "December 10, 2019",
-      title: "Lorem Ipsum dolor sit amet, consectetur adipisicing elit.",
-      link: ""
+      date: "June 14, 2019",
+      title: "Bakhu Holdings News Release",
+      link: "https://www.bakhuholdings.com/s/Bakhu-News-Release-06142019.docx"
     },
     {
-      date: "December 13, 2019",
-      title: "Lorem Ipsum dolor sit amet, consectetur adipisicing elit.",
-      link: ""
+      date: "April 30, 2019",
+      title: "Bakhu Holdings 10Q-Quarter ended",
+      link: "https://www.bakhuholdings.com/s/Bakhu-10Q-Quarter-ended-4302019.pdf"
     },
     {
-      date: "December 14, 2019",
-      title: "Lorem Ipsum dolor sit amet, consectetur adipisicing elit.",
-      link: ""
+      date: "January 31, 2019",
+      title: "Bakhu Holdings 10Q",
+      link: "https://www.bakhuholdings.com/s/Bakhu-Holdings-10Q.pdf"
     },
     {
-      date: "December 16, 2019",
-      title: "Lorem Ipsum dolor sit amet, consectetur adipisicing elit.",
-      link: ""
+      date: "July 31, 2018",
+      title: "Bakhu Holding 10K-Year ended",
+      link: "https://www.bakhuholdings.com/s/Bakhu-10K.pdf"
     },
     {
-      date: "December 19, 2019",
-      title: "Lorem Ipsum dolor sit amet, consectetur adipisicing elit.",
-      link: ""
+      date: "April 30, 2018",
+      title: "Bakhu Holdings 10Q-Quarter ended",
+      link: "https://www.bakhuholdings.com/s/Bakhu-10Q.pdf"
+    },
+    {
+      date: "December 28, 2018",
+      title: "Bakhu Holdings 8k",
+      link: "https://www.bakhuholdings.com/s/BKUH-8-K-SEC-filing-12-27-2018.pdf"
+    },
+    {
+      date: "December 28, 2018",
+      title: "Bakhu Holdings News Release",
+      link: "https://www.bakhuholdings.com/s/Bakhu-News-Release"
     }
   ];
 
