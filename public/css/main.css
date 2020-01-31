@@ -840,6 +840,8 @@ button:focus {
       color: #333; }
     .single-team .team-details p {
       color: #333; }
+    .single-team .team-details .team-bio {
+      font-size: 12px; }
   .single-team .social-list li {
     display: inline-block; }
     .single-team .social-list li a {
