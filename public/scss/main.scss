@@ -5,6 +5,7 @@ $regular: 400;
 $medium: 500;
 $bold: 700;
 $letter-spacing: 0px;
+$text-color: #585858;
 
 
  // blue - Now blue
@@ -20,8 +21,258 @@ $letter-spacing: 0px;
 	color: white !important;
  }
  
-	
+.mainBox {
+	background-color: white;
+	border-radius: 75px;
+	position: relative;
+	top: 10%;
+	margin: auto;
+	height: 80%;
+	width: 50%;
+	padding: 5%;
 
+}
+
+// #4d2275
+
+body {
+	background-color: #4d2275;
+	height: 100vh;
+}
+
+.row {
+	margin-left: 0px !important;
+}
+
+
+.logo-container {
+	height: 30%;
+	width: 100%;
+	div {
+		height: 100%;
+		#logo {
+			width: 77px;
+			height: 100%;
+			margin: 0 auto;
+			img {
+				height: 75%;
+			}
+		}
+	}
+}
+
+.text-container {
+	color: $text-color;
+	font-family: $primary-font;
+	height: 30%;
+	padding: 50px;
+	margin-top: -5px;
+	margin-bottom: 80px;
+	div {
+		div:first-child {
+			font-size: 3rem !important;
+		}
+		div:nth-child(2) {
+			font-size: .8rem;
+		}
+		div:nth-child(3) {
+			font-size: .8rem;
+		}
+	}
+}
+
+
+// Gears
+
+#gearsContainer {
+	width: 429px;
+    zoom: .6;
+    margin: 0 auto;
+}
+
+@keyframes gear1 {
+    0% { transform: rotate(0deg) }
+   50% { transform: rotate(22.5deg) }
+  100% { transform: rotate(45deg) }
+}
+.gear1 > div {
+  transform-origin: 100px 100px;
+  animation: gear1 0.2s infinite linear;
+}
+.gear1 > div div {
+    position: absolute;
+    width: 22px;
+    height: 152px;
+    background: #76c1ed;
+    left: 100px;
+    top: 100px;
+    transform: translate(-50%,-50%);
+}
+.gear1 > div div:nth-child(1) {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+.gear1 > div div:nth-child(6) {
+    width: 80px;
+    height: 80px;
+    background: #ffffff;
+    border-radius: 50%;
+}.gear1 > div div:nth-child(3) {
+  transform: translate(-50%,-50%) rotate(45deg)
+}.gear1 > div div:nth-child(4) {
+  transform: translate(-50%,-50%) rotate(90deg)
+}.gear1 > div div:nth-child(5) {
+  transform: translate(-50%,-50%) rotate(135deg)
+}
+.gear1Container {
+  position: relative;
+  left: 5px;
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  overflow: hidden;
+  background: transparent;
+  
+}
+.gear1 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform: translateZ(0) scale(1);
+  backface-visibility: hidden;
+  transform-origin: 0 0; /* see note above */
+}
+.gear1 div { box-sizing: content-box; }
+
+
+/* Gear 2 */
+
+@keyframes gear2 {
+    0% { transform: rotate(0deg) }
+   50% { transform: rotate(-22.5deg) }
+  100% { transform: rotate(-45deg) }
+}
+.gear2 > div {
+  transform-origin: 100px 100px;
+  animation: gear2 0.2s infinite linear;
+}
+.gear2 > div div {
+    position: absolute;
+    width: 22px;
+    height: 152px;
+    background: #76c1ed;
+    left: 100px;
+    top: 100px;
+    transform: translate(-50%,-50%);
+}
+.gear2 > div div:nth-child(1) {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+.gear2 > div div:nth-child(6) {
+    width: 80px;
+    height: 80px;
+    background: #ffffff;
+    border-radius: 50%;
+}.gear2 > div div:nth-child(3) {
+  transform: translate(-50%,-50%) rotate(45deg)
+}.gear2 > div div:nth-child(4) {
+  transform: translate(-50%,-50%) rotate(90deg)
+}.gear2 > div div:nth-child(5) {
+  transform: translate(-50%,-50%) rotate(135deg)
+}
+.gear2Container {
+  position: relative;
+  top: 45px;
+  right: 90px;
+  zoom: .7;
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  overflow: hidden;
+  background: transparent;
+}
+.gear2 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform: translateZ(0) scale(1);
+  backface-visibility: hidden;
+  transform-origin: 0 0; /* see note above */
+}
+.gear2 div { box-sizing: content-box; }
+
+/* Gear 3 */
+
+@keyframes gear3 {
+    0% { transform: rotate(0deg) }
+   50% { transform: rotate(22.5deg) }
+  100% { transform: rotate(45deg) }
+}
+.gear3 > div {
+  transform-origin: 100px 100px;
+  animation: gear3 0.2s infinite linear;
+  animation-delay: .1s;
+}
+.gear3 > div div {
+    position: absolute;
+    width: 22px;
+    height: 152px;
+    background: #76c1ed;
+    left: 100px;
+    top: 100px;
+    transform: translate(-50%,-50%);
+}
+.gear3 > div div:nth-child(1) {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+.gear3 > div div:nth-child(6) {
+    width: 80px;
+    height: 80px;
+    background: #ffffff;
+    border-radius: 50%;
+}.gear3 > div div:nth-child(3) {
+  transform: translate(-50%,-50%) rotate(45deg)
+}.gear3 > div div:nth-child(4) {
+  transform: translate(-50%,-50%) rotate(90deg)
+}.gear3 > div div:nth-child(5) {
+  transform: translate(-50%,-50%) rotate(135deg)
+}
+.gear3Container {
+  position: relative;
+  bottom: 130px;
+  right: 300px;
+  zoom: .4;
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  overflow: hidden;
+  background: transparent;
+}
+.gear3 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform: translateZ(0) scale(1);
+  backface-visibility: hidden;
+  transform-origin: 0 0; /* see note above */
+}
+.gear3 div { box-sizing: content-box; }
+
+
+.email {
+	position: absolute;
+    color: white;
+    bottom: 5px;
+    margin-left: 42%;
+}
+
+
+// Loader
 
 #loader{
 	position: fixed;
@@ -71,8 +322,138 @@ $letter-spacing: 0px;
 	}
 }
 
+@media (min-width: 1199px) and (max-width: 1337px) {
+	.text-container {
+		color: $text-color;
+		font-family: $primary-font;
+		height: 30%;
+		padding: 50px;
+		margin-top: -5px;
+		margin-bottom: 80px;
+		div {
+			div:first-child {
+				font-size: 2.5rem !important;
+			}
+			div:nth-child(2) {
+				font-size: .7rem;
+			}
+			div:nth-child(3) {
+				font-size: .7rem;
+			}
+		}
+	}
+	
+}
 
+/* only small desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+	.text-container {
+		color: $text-color;
+		font-family: $primary-font;
+		height: 30%;
+		padding: 50px;
+		margin-top: -5px;
+		margin-bottom: 80px;
+		div {
+			div:first-child {
+				font-size: 2rem !important;
+			}
+			div:nth-child(2) {
+				font-size: .7rem;
+			}
+			div:nth-child(3) {
+				font-size: .7rem;
+			}
+		}
+	}
+	.email {
+		position: absolute;
+		color: white;
+		bottom: 5px;
+		margin-left: 38%;
+	}
+	
+	
+}
 
+/* tablets */
+@media (max-width: 991px) {
+    
+}
 
+/* only small tablets */
+@media (min-width: 768px) and (max-width: 991px) {
 
+	.text-container {
+		color: $text-color;
+		font-family: $primary-font;
+		height: 30%;
+		padding: 50px;
+		margin-top: -5px;
+		margin-bottom: 80px;
+		div {
+			div:first-child {
+				font-size: 1.35rem !important;
+			}
+			div:nth-child(2) {
+				font-size: .6rem;
+			}
+			div:nth-child(3) {
+				font-size: .6rem;
+			}
+		}
+	}
 
+	.email {
+		position: absolute;
+		color: white;
+		bottom: 5px;
+		margin-left: 38%;
+	}
+	
+
+}
+
+/* mobile or only mobile */
+@media (max-width: 767px) {
+    
+	.text-container {
+		color: $text-color;
+		font-family: $primary-font;
+		height: 30%;
+		padding: 50px;
+		margin-top: -5px;
+		margin-bottom: 80px;
+		div {
+			div:first-child {
+				font-size: 1.5rem !important;
+			}
+			div:nth-child(2) {
+				font-size: .45rem;
+			}
+			div:nth-child(3) {
+				font-size: .45rem;
+			}
+		}
+	}
+
+	.mainBox {
+		background-color: white;
+		border-radius: 75px;
+		position: relative;
+		top: 10%;
+		margin: auto;
+		height: 80%;
+		width: 90%;
+		padding: 5%;
+	
+	}
+
+	.email {
+		position: absolute;
+		color: white;
+		bottom: 5px;
+		margin-left: 20%;
+	}
+	
+}
