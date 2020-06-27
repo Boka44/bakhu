@@ -245,7 +245,7 @@ body {
 .email {
   position: absolute;
   color: white;
-  bottom: 5px;
+  bottom: 15px;
   margin-left: 42%; }
 
 #loader {
@@ -327,10 +327,8 @@ body {
   .email {
     position: absolute;
     color: white;
-    bottom: 5px;
     margin-left: 38%; } }
 
-/* tablets */
 /* only small tablets */
 @media (min-width: 768px) and (max-width: 991px) {
   .text-container {
@@ -349,7 +347,6 @@ body {
   .email {
     position: absolute;
     color: white;
-    bottom: 5px;
     margin-left: 38%; } }
 
 /* mobile or only mobile */
@@ -359,7 +356,7 @@ body {
     font-family: "Poppins", sans-serif;
     height: 30%;
     padding: 50px;
-    margin-top: -5px;
+    margin-top: 10px;
     margin-bottom: 80px; }
     .text-container div div:first-child {
       font-size: 1.5rem !important; }
@@ -375,9 +372,24 @@ body {
     margin: auto;
     height: 80%;
     width: 90%;
-    padding: 5%; }
+    padding: 5%;
+    padding-top: 45px !important; }
   .email {
     position: absolute;
     color: white;
-    bottom: 5px;
-    margin-left: 20%; } }
+    margin-left: 20%; }
+  #gearsContainer {
+    width: 429px;
+    zoom: .4;
+    margin: 0 auto; }
+  .logo-container {
+    height: 30%;
+    width: 100%; }
+    .logo-container div {
+      height: 100%; }
+      .logo-container div #logo {
+        width: 68px;
+        height: 100%;
+        margin: 0 auto; }
+        .logo-container div #logo img {
+          height: 75%; } }

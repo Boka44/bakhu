@@ -267,7 +267,7 @@ body {
 .email {
 	position: absolute;
     color: white;
-    bottom: 5px;
+    bottom: 15px;
     margin-left: 42%;
 }
 
@@ -369,17 +369,12 @@ body {
 	.email {
 		position: absolute;
 		color: white;
-		bottom: 5px;
 		margin-left: 38%;
 	}
 	
 	
 }
 
-/* tablets */
-@media (max-width: 991px) {
-    
-}
 
 /* only small tablets */
 @media (min-width: 768px) and (max-width: 991px) {
@@ -407,7 +402,6 @@ body {
 	.email {
 		position: absolute;
 		color: white;
-		bottom: 5px;
 		margin-left: 38%;
 	}
 	
@@ -422,7 +416,7 @@ body {
 		font-family: $primary-font;
 		height: 30%;
 		padding: 50px;
-		margin-top: -5px;
+		margin-top: 10px;
 		margin-bottom: 80px;
 		div {
 			div:first-child {
@@ -446,14 +440,39 @@ body {
 		height: 80%;
 		width: 90%;
 		padding: 5%;
+		padding-top:45px !important;
 	
 	}
 
 	.email {
 		position: absolute;
 		color: white;
-		bottom: 5px;
 		margin-left: 20%;
 	}
+
+	#gearsContainer {
+		width: 429px;
+		zoom: .4;
+		margin: 0 auto;
+	}
+
+	
+.logo-container {
+	height: 30%;
+	width: 100%;
+	div {
+		height: 100%;
+		#logo {
+			width: 68px;
+			height: 100%;
+			margin: 0 auto;
+			img {
+				height: 75%;
+			}
+		}
+	}
+}
+
+	
 	
 }
