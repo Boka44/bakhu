@@ -377,7 +377,8 @@ body {
   .email {
     position: absolute;
     color: white;
-    margin-left: 20%; }
+    margin-left: 20%;
+    bottom: 5px; }
   #gearsContainer {
     width: 429px;
     zoom: .4;
