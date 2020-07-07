@@ -505,20 +505,21 @@ $letter-spacing: 0px;
 	}
 	.slicknav_btn{
 	  border-color: $preset;
+	  margin-bottom: 13%;
 	}
 	.slicknav_menu .slicknav_icon-bar{
 	  background: $preset;
 	}
 	/* only small tablets */
-	@media (min-width: 768px) and (max-width: 991px) {
-	   #nav-main li a.nav-link{
-	    padding-top: 18px;
-	  }
+	// @media (min-width: 768px) and (max-width: 991px) {
+	//    #nav-main li a.nav-link{
+	//     padding-top: 18px;
+	//   }
 
-	  .navbar {
-		  height: 13%;
-	  }
-	}
+	//   .navbar {
+	// 	  height: 13%;
+	//   }
+	// }
 	.navbar-toggler{
 	  display: none;
 	}

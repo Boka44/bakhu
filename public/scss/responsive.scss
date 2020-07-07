@@ -28,39 +28,43 @@ $green: rgb(45, 48, 247);
         color: $green;
     }
 
-    #hero-area .contents h1{
-        font-size: 28px;
-    }
-    .item-boxes h4{
-        font-size: 18px;
-    }
-    #features .show-box img{
-        display: none;
-    }
-    .pricing-table .pricing-details ul li{
-        font-size: 12px;
-    }
-    .counters .facts-item .fact-count h4{
-        font-size: 14px;
-    }
-    .single-team{
-        margin-bottom: 30px;
-    }
-    .meta-tags span{
-        margin-right: 3px;
-    }
-    .meta-tags span i{
-        margin-right: 0px;
-    }
-    #blog .blog-item-text h3{
-        font-size: 14px;
-        line-height: 20px;
-    }
+    // #hero-area .contents h1{
+    //     font-size: 28px;
+    // }
+    // .item-boxes h4{
+    //     font-size: 18px;
+    // }
+    // #features .show-box img{
+    //     display: none;
+    // }
+    // .pricing-table .pricing-details ul li{
+    //     font-size: 12px;
+    // }
+    // .counters .facts-item .fact-count h4{
+    //     font-size: 14px;
+    // }
+    // .single-team{
+    //     margin-bottom: 30px;
+    // }
+    // .meta-tags span{
+    //     margin-right: 3px;
+    // }
+    // .meta-tags span i{
+    //     margin-right: 0px;
+    // }
+    // #blog .blog-item-text h3{
+    //     font-size: 14px;
+    //     line-height: 20px;
+    // }
 
 }
 
 /* mobile or only mobile */
 @media (max-width: 767px) {
+
+    .section{
+		padding: 140px 0;
+	}
     .section-header .section-title{
         font-size: 20px;
     }

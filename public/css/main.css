@@ -448,18 +448,13 @@ button:focus {
   display: none; }
 
 .slicknav_btn {
-  border-color: #595cff; }
+  border-color: #595cff;
+  margin-bottom: 13%; }
 
 .slicknav_menu .slicknav_icon-bar {
   background: #595cff; }
 
 /* only small tablets */
-@media (min-width: 768px) and (max-width: 991px) {
-  #nav-main li a.nav-link {
-    padding-top: 18px; }
-  .navbar {
-    height: 13%; } }
-
 .navbar-toggler {
   display: none; }
 
