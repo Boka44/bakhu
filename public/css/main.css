@@ -108,8 +108,8 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
     margin: auto;
     width: 70px;
     position: relative;
-    border-top: 2px solid #595cff;
-    margin-top: 15px; }
+    border-top: 4px solid #595cff;
+    margin-top: 8px; }
 
 /* ==========================================================================
    2.2 Buttons
@@ -487,7 +487,40 @@ button:focus {
     background: #f8f9fa; }
   .slicknav_nav .dropdown li a.active {
     background: #f8f9fa;
-    color: #595cff; } }
+    color: #595cff; }
+  .slicknav_nav {
+    max-height: 620px !important; } }
+
+.nav-item:hover .sub-menu {
+  display: block; }
+
+.sub-menu {
+  display: none;
+  width: 100%;
+  z-index: 1;
+  position: absolute;
+  padding-left: 28px; }
+  .sub-menu li:first-child {
+    margin-top: -20px; }
+  .sub-menu li {
+    padding-bottom: 8px; }
+    .sub-menu li a {
+      color: white; }
+
+.sub-alt {
+  background-color: black;
+  width: 130px; }
+
+.sub-menu:hover {
+  display: block; }
+
+.sub-menu li:hover {
+  color: #595cff;
+  cursor: pointer; }
+
+.mobile-sub {
+  color: #666 !important;
+  padding-left: 25px; }
 
 /* ==========================================================================
   5. Services section
