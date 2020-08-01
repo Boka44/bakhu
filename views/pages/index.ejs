@@ -89,23 +89,23 @@
       <!-- Navbar End -->   
       <div class="container">      
         <div class="row justify-content-md-center">
-          <div class="col-lg-5 col-md-12 col-sm-12">
+          <div class="col-lg-12 col-md-12 col-sm-12">
             <div class="contents text-center">
               <h1 class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0.3s">Bakhu Holdings</h1>
               <!-- <p class="lead  wow fadeIn" data-wow-duration="1000ms" data-wow-delay="400ms">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p> -->
               <!-- <a href="#" class="btn btn-common wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">Download</a> -->
             </div>
           </div>
-          <div class="col-lg-5 col-md-12 col-sm-12">
+          <!-- <div class="col-lg-5 col-md-12 col-sm-12">
             <div class="contents text-center">
               <div class="ticker">
-                <h1 class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0.3s"><%= ticker.symbol %></h1>
-                <p class="lead  wow fadeIn" data-wow-duration="1000ms" data-wow-delay="400ms">$<%= ticker.latestPrice %></p>
-                <p class="lead  wow fadeIn date" data-wow-duration="1000ms" data-wow-delay="400ms"><%= ticker.formattedDate %></p>
+                <h1 class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0.3s"></h1>
+                <p class="lead  wow fadeIn" data-wow-duration="1000ms" data-wow-delay="400ms"></p>
+                <p class="lead  wow fadeIn date" data-wow-duration="1000ms" data-wow-delay="400ms"></p>
               </div>
-              <!-- <a href="#" class="btn btn-common wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">Download</a> -->
+              <a href="#" class="btn btn-common wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">Download</a> 
             </div>
-          </div>
+          </div> -->
         </div> 
       </div>           
     </header>
@@ -270,7 +270,7 @@
                 <div class="team-inner">                  
                   <h4 class="team-title">Dr. Peter Whitton</h4>
                   <p>Director</p>
-                  <p class="team-bio" style="font-size: 10px;">De. Peter Whitton is a well-respected expert in the fields of microbiology and biochemistry with over 20 years’ experience in his field, and is recognized as a leader in the field of plant cell culturing and research. Dr. Whitton has a BSC in Biology with Chemistry and a PhD in Biochemistry. He is a member of the Institute of Biology and a chartered biologist, a member of the Royal Society of Chemistry and a Fellow of the Institute of Biomedical Sciences. Dr. Whitton has wide ranging expertise, having provided advisory services to leading pharmaceutical companies such as GlaxoSmithKline and Boots on regulatory strategy, as well as directing research and providing toxicology advice to Pfizer. Dr. Whitton previously served as director and Chief Scientific Officer for Naturally Scientific Technologies Ltd., where he developed and patented methods for the production of glyceraldehyde from CO2 and the production of Lipids using plant cell culture technologies. Prior to joining Naturally Scientific Dr. Whitton ran and managed his own research organization, Phyto-Research Ltd., for five years and secured a number of patents in the field of plant tissue cultures and natural sciences, as well as providing research and advisory services to leading pharmaceutical companies and universities. During this period Dr. Whitton worked with The Serious and Organized Crime Directorate of the Metropolitan Police with Assistant Commissioner Tarique Gaffur on the development of new drug and explosive detection techniques. Dr. Whitton held the position of senior scientist for a number of years for an organization specializing in the preparation of herbal-based remedies and cosmetics and was responsible for research, quality and conformance with British Pharmacopeia Standards and compliance with Cosmetic Safety regulations. Dr. Whitton has successfully patented many bio-technology patents with a particular focus on the use of plant cell technology for industrial applications. Dr. Whitton was a co-founder and currently services as a director of Lykke Research Ltd., a bio-technology company that has developed and patented a process to produce the API from the Hoodia Gordonii plant from cell cultures for use in the dietary supplements market as an appetite suppressant. He is the co-founder and a director of PhytoCyte Pty, a bio-technology company that has developed a process to produce cannaboids and their API’s from cell cultures for the medicinal and recreational cannabis markets.</p>
+                  <p class="team-bio">De. Peter Whitton is a well-respected expert in the fields of microbiology and biochemistry with over 20 years’ experience in his field, and is recognized as a leader in the field of plant cell culturing and research. Dr. Whitton has a BSC in Biology with Chemistry and a PhD in Biochemistry. He is a member of the Institute of Biology and a chartered biologist, a member of the Royal Society of Chemistry and a Fellow of the Institute of Biomedical Sciences. Dr. Whitton has wide ranging expertise, having provided advisory services to leading pharmaceutical companies such as GlaxoSmithKline and Boots on regulatory strategy, as well as directing research and providing toxicology advice to Pfizer. Dr. Whitton previously served as director and Chief Scientific Officer for Naturally Scientific Technologies Ltd., where he developed and patented methods for the production of glyceraldehyde from CO2 and the production of Lipids using plant cell culture technologies. Prior to joining Naturally Scientific Dr. Whitton ran and managed his own research organization, Phyto-Research Ltd., for five years and secured a number of patents in the field of plant tissue cultures and natural sciences, as well as providing research and advisory services to leading pharmaceutical companies and universities. During this period Dr. Whitton worked with The Serious and Organized Crime Directorate of the Metropolitan Police with Assistant Commissioner Tarique Gaffur on the development of new drug and explosive detection techniques. Dr. Whitton held the position of senior scientist for a number of years for an organization specializing in the preparation of herbal-based remedies and cosmetics and was responsible for research, quality and conformance with British Pharmacopeia Standards and compliance with Cosmetic Safety regulations. Dr. Whitton has successfully patented many bio-technology patents with a particular focus on the use of plant cell technology for industrial applications. Dr. Whitton was a co-founder and currently services as a director of Lykke Research Ltd., a bio-technology company that has developed and patented a process to produce the API from the Hoodia Gordonii plant from cell cultures for use in the dietary supplements market as an appetite suppressant. He is the co-founder and a director of PhytoCyte Pty, a bio-technology company that has developed a process to produce cannaboids and their API’s from cell cultures for the medicinal and recreational cannabis markets.</p>
                 </div>
               </div>
             </div>
@@ -362,6 +362,12 @@
                     <div class="col-md-12">
                       <div class="form-group">
                         <input type="text" placeholder="Your Email" id="email" class="form-control" name="name" required data-error="Please enter your email">
+                        <div class="help-block with-errors"></div>
+                      </div> 
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <input type="text" placeholder="Your Phone Number" id="phone" class="form-control" name="name" required data-error="Please enter your phone number">
                         <div class="help-block with-errors"></div>
                       </div> 
                     </div>

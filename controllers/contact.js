@@ -20,14 +20,14 @@ contactController.sendEmail = (req, res, next) => {
       'Access-Control-Allow-Origin': '*'
     })
     req.headers['Access-Control-Allow-Origin'] = '*'
-    console.log(req.body);
+    // console.log(req.body);
     let email = req.body.email;
-    // let phone = req.body.phone;
+    let phone = req.body.phone;
     let name = req.body.name;
     let message = req.body.message;
     let subject = `Message from ${name} at Bakhu Website`;
-    console.log(req)
-    let body = `From ${name} \nEmail: ${email}\n\n${message}`;
+    // console.log(req)
+    let body = `From ${name} \nEmail: ${email} \nPhone: ${phone}\n\n${message}`;
 
     // const from = name && email ? `${name} <${email}>` : `${name || email}`
     const mailOptions = {

@@ -16,6 +16,7 @@ function submitForm(){
     var name = $("#name").val();
     var email = $("#email").val();
     // var msg_subject = $("#msg_subject").val();
+    var phone = $("#phone").val();
     var message = $("#message").val();
 
 
@@ -27,6 +28,7 @@ function submitForm(){
         data: JSON.stringify({
             "name": name,
             "email": email,
+            "phone": phone,
             "message": message
         }),
         success : function(data){

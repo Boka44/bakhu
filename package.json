@@ -15,9 +15,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "debug": "node server.js",
-    "build": "node-sass --watch public/scss -o public/css",
-    "start": "npm start"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node-sass --watch public/scss -o public/css"
   },
   "author": "Boka44",
   "license": "ISC"
