@@ -106,9 +106,9 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
     font-weight: 400; }
   .section-header .lines {
     margin: auto;
-    width: 70px;
+    width: 90px;
     position: relative;
-    border-top: 2px solid #595cff;
+    border-top: 4px solid #595cff;
     margin-top: 15px; }
 
 /* ==========================================================================
