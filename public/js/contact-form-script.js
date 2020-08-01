@@ -15,20 +15,25 @@ function submitForm(){
     // Initiate Variables With Form Content
     var name = $("#name").val();
     var email = $("#email").val();
-    var msg_subject = $("#msg_subject").val();
+    // var msg_subject = $("#msg_subject").val();
     var message = $("#message").val();
 
 
     $.ajax({
         type: "POST",
-        url: "php/form-process.php",
-        data: "name=" + name + "&email=" + email + "&msg_subject=" + msg_subject + "&message=" + message,
-        success : function(text){
-            if (text == "success"){
+        url: "/api/contact",
+        dataType: 'json',
+        data: JSON.stringify({
+            "name": "name",
+            "email": "email",
+            "message": "message"
+        }),
+        success : function(data){
+            if (data.success == true){
                 formSuccess();
             } else {
                 formError();
-                submitMSG(false,text);
+                submitMSG(false,data.message);
             }
         }
     });

@@ -813,6 +813,7 @@ button:focus {
   opacity: 1; }
 
 .single-team {
+  padding-top: 20px;
   position: relative;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -970,3 +971,10 @@ footer {
       color: #fff; }
       .copyright p a:hover {
         color: #595cff; }
+
+.hover-pointer :hover {
+  cursor: pointer; }
+
+#msgSubmit {
+  padding-top: 15px;
+  font-size: 1.5rem !important; }
