@@ -26,7 +26,7 @@ contactController.sendEmail = (req, res, next) => {
     let name = req.body.name;
     let message = req.body.message;
     let subject = `Message from ${name} at Bakhu Website`;
-
+    console.log(req)
     let body = `From ${name} \nEmail: ${email}\n\n${message}`;
 
     // const from = name && email ? `${name} <${email}>` : `${name || email}`

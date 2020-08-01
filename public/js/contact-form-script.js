@@ -22,11 +22,12 @@ function submitForm(){
     $.ajax({
         type: "POST",
         url: "/api/contact",
+        contentType: "application/json; charset=utf-8",
         dataType: 'json',
         data: JSON.stringify({
-            "name": "name",
-            "email": "email",
-            "message": "message"
+            "name": name,
+            "email": email,
+            "message": message
         }),
         success : function(data){
             if (data.success == true){
