@@ -877,10 +877,12 @@ button:focus {
    ========================================================================== */
 #blog {
   background-color: #595cff;
-  color: white; }
+  color: white;
+  padding-left: 15px;
+  padding-right: 15px; }
   #blog #blog-container .hrBlog {
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: -52px;
+    margin-right: -52px;
     border-top: 1px solid #868e96; }
   #blog #blog-container .blogItem {
     padding: 0px 15px 15px 15px; }
@@ -895,6 +897,18 @@ button:focus {
       #blog #blog-container .blogItem .blogTitle:hover {
         transition: ease-in-out;
         font-weight: bold; }
+  #blog #blog-container .docs {
+    width: 100%;
+    text-align: center; }
+    #blog #blog-container .docs a {
+      font-size: 20px;
+      color: white;
+      font-style: italic;
+      text-decoration: underline;
+      padding: 30px; }
+      @media (max-width: 676px) {
+        #blog #blog-container .docs a {
+          font-size: 14px; } }
 
 /* ==========================================================================
   14. Contact Us
