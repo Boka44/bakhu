@@ -8,100 +8,72 @@
    <%- include('../partials/navbar_alt') %>
   
 
-    <!-- Blog Section -->
-    <section id="" class="section">
-        <!-- Container Starts -->
-        <div class="container">
-          <div class="section-header">          
-            <h2 class="section-title">Licensing</h2>
-            <hr class="lines" style="border-top-color: rgb(89, 92, 255)">
-            <!-- <p class="section-subtitle white-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, dignissimos! <br> Lorem ipsum dolor sit amet, consectetur.</p> -->
-          </div>
-          <div class="row" id="">
-            <!-- <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 blog-item">
-              <div class="blog-item-wrapper wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
-                <div class="blog-item-img">
-                  <a href="">
-                    <img src="img/blog/img1.jpg" alt="">
-                  </a>                
-                </div>
-                <div class="blog-item-text"> 
-                  <h3>
-                    <a href="">Lorem ipsum dolor sit amet?</a>
-                  </h3>
-                  <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua... 
-                  </p>
-                  <a href="" class="btn-rm">Read More <i class="lnr lnr-arrow-right"></i></a>
-                </div>
-              </div>
-            </div> -->
-          </div>
-        </div>
-      </section>
-      <!-- blog Section End -->
-    
-   
-
      <!-- Contact Section Start -->
- <section id="contact" class="section" data-stellar-background-ratio="-0.2">      
-    <div class="contact-form">
-      <div class="container">
-        <div class="row">     
-          <div class="col-lg-6 col-sm-6 col-xs-12">
-            <div class="contact-us">
-              <h3>Contact Us</h3>
-              <div class="contact-address">
-                <p>1 World Trade Center, Long Beach Ca, Suite 140</p>
-                <p class="phone">Phone: <span>1(310)804-7037</span></p>
-                <p class="email">E-mail: <span>info@bakhuholdings.com</span></p>
+     <section id="contact" class="section" data-stellar-background-ratio="-0.2" style="min-height: 92vh;">      
+      <div class="contact-form" style="padding-top: 10%;">
+        <div class="container">
+          <div class="row">     
+            <div class="col-lg-6 col-sm-6 col-xs-12">
+              <div class="contact-us">
+                <h3>Contact Us</h3>
+                <div class="contact-address">
+                  <p>1 World Trade Center, Long Beach Ca, Suite 140</p>
+                  <p class="phone">Phone: <span>(858) 68-BAKHU/ (858) 682-2548</span></p>
+                  <p class="email">E-mail: <span>info@bakhuholdings.com</span></p>
+                </div>
+
+                <!-- <div class="social-icons">
+                  <ul>
+                    <li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li class="google-plus"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                  </ul>
+                </div> -->
               </div>
-              <!-- <div class="social-icons">
-                <ul>
-                  <li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
-                  <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                  <li class="google-plus"><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                  <li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                </ul>
-              </div> -->
-            </div>
-          </div>     
-          <!-- <div class="col-lg-6 col-sm-6 col-xs-12">
-            <div class="contact-block">
-              <form id="contactForm">
-                <div class="row">
-                  <div class="col-md-12">
-                    <div class="form-group">
-                      <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required data-error="Please enter your name">
-                      <div class="help-block with-errors"></div>
-                    </div>                                 
-                  </div>
-                  <div class="col-md-12">
-                    <div class="form-group">
-                      <input type="text" placeholder="Your Email" id="email" class="form-control" name="name" required data-error="Please enter your email">
-                      <div class="help-block with-errors"></div>
-                    </div> 
-                  </div>
-                  <div class="col-md-12">
-                    <div class="form-group"> 
-                      <textarea class="form-control" id="message" placeholder="Your Message" rows="8" data-error="Write your message" required></textarea>
-                      <div class="help-block with-errors"></div>
+            </div>     
+            <div class="col-lg-6 col-sm-6 col-xs-12">
+              <div class="contact-block">
+                <form id="contactForm" action="/api/contact" method="POST">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required data-error="Please enter your name">
+                        <div class="help-block with-errors"></div>
+                      </div>                                 
                     </div>
-                    <div class="submit-button text-center">
-                      <button class="btn btn-common" id="submit" type="submit">Send Message</button>
-                      <div id="msgSubmit" class="h3 text-center hidden"></div> 
-                      <div class="clearfix"></div> 
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <input type="text" placeholder="Your Email" id="email" class="form-control" name="name" required data-error="Please enter your email">
+                        <div class="help-block with-errors"></div>
+                      </div> 
                     </div>
-                  </div>
-                </div>            
-              </form>
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <input type="text" placeholder="Your Phone Number" id="phone" class="form-control" name="name" required data-error="Please enter your phone number">
+                        <div class="help-block with-errors"></div>
+                      </div> 
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group"> 
+                        <textarea class="form-control" id="message" placeholder="Your Message" rows="8" data-error="Write your message" required></textarea>
+                        <div class="help-block with-errors"></div>
+                      </div>
+                      <div class="submit-button text-center">
+                        <button class="btn btn-common" id="submit" type="submit">Send Message</button>
+                        <div id="msgSubmit" class="h3 text-center hidden"></div> 
+                        <div class="clearfix"></div> 
+                      </div>
+                    </div>
+                  </div>            
+                </form>
+              </div>
             </div>
-          </div> -->
+          </div>
         </div>
-      </div>
-    </div>           
-  </section>
-  <!-- Contact Section End -->
+      </div>           
+    </section>
+    <!-- Contact Section End -->
 
 
 
