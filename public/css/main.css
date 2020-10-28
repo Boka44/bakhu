@@ -842,7 +842,9 @@ button:focus {
     .single-team .team-details p {
       color: #333; }
     .single-team .team-details .team-bio {
-      font-size: 12px; }
+      font-size: 12px;
+      height: 500px;
+      overflow-y: scroll; }
   .single-team .social-list li {
     display: inline-block; }
     .single-team .social-list li a {
