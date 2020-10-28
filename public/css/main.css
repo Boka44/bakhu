@@ -104,12 +104,13 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
     color: #333;
     font-size: 14px;
     font-weight: 400; }
-  .section-header .lines {
-    margin: auto;
-    width: 70px;
-    position: relative;
-    border-top: 4px solid #595cff;
-    margin-top: 8px; }
+
+.lines {
+  margin: auto;
+  width: 70px;
+  position: relative;
+  border-top: 4px solid #595cff;
+  margin-top: 8px; }
 
 /* ==========================================================================
    2.2 Buttons
@@ -879,7 +880,9 @@ button:focus {
     .single-team .team-details p {
       color: #333; }
     .single-team .team-details .team-bio {
-      font-size: 12px; }
+      font-size: 13px;
+      height: 500px;
+      overflow-y: scroll; }
   .single-team .social-list li {
     display: inline-block; }
     .single-team .social-list li a {
@@ -932,6 +935,10 @@ button:focus {
       #blog #blog-container .blogItem .blogTitle:hover {
         transition: ease-in-out;
         font-weight: bold; }
+
+.corpgov {
+  padding-left: 60px !important;
+  padding-right: 60px !important; }
 
 .docs {
   width: 100%;

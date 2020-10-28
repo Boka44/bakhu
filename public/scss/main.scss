@@ -131,13 +131,21 @@ $letter-spacing: 0px;
 			font-size: 14px;
 			font-weight: 400;
 		}
-		.lines{
-			margin: auto;
-			width: 70px;
-			position: relative;
-			border-top: 4px solid $preset;
-			margin-top: 8px;
-		}
+		// .lines{
+		// 	margin: auto;
+		// 	width: 70px;
+		// 	position: relative;
+		// 	border-top: 4px solid $preset;
+		// 	margin-top: 8px;
+		// }
+	}
+
+	.lines{
+		margin: auto;
+		width: 70px;
+		position: relative;
+		border-top: 4px solid $preset;
+		margin-top: 8px;
 	}
 
 /* ==========================================================================
@@ -1045,7 +1053,9 @@ $letter-spacing: 0px;
 			color: #333;
 		}
 		.team-bio {
-			font-size: 12px;
+			font-size: 13px;
+			height: 500px;
+			overflow-y: scroll;
 		}
    	}
    	.social-list{
@@ -1164,6 +1174,11 @@ $letter-spacing: 0px;
     //   		line-height: 25px; margin-bottom: 20px;
     //   	}    
     //   }
+  }
+
+  .corpgov {
+	padding-left: 60px !important;
+	padding-right: 60px !important;
   }
 
   .docs {
