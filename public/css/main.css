@@ -940,6 +940,10 @@ button:focus {
 .corpgov {
   padding-left: 100px !important;
   padding-right: 100px !important; }
+  @media (max-width: 696px) {
+    .corpgov {
+      padding-left: 80px !important;
+      padding-right: 80px !important; } }
 
 .docs {
   width: 100%;
@@ -967,6 +971,9 @@ button:focus {
     width: 455px;
     margin: 0 auto;
     text-align: center; }
+    @media (max-width: 696px) {
+      #documents p {
+        width: 380px; } }
   #documents .pdf-wrapper {
     display: flex;
     width: 400px;
