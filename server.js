@@ -27,6 +27,9 @@ app.use('/contact', contact);
 app.use('/blank', blank);
 app.use('/corpgov', corpgov);
 
+const contactController = require('./controllers/contact');
+app.post('/contact', contactController.sendEmail);
+
 app.listen(PORT, () => {
     console.log('Server is running on port ' + PORT);
 });

@@ -15,16 +15,21 @@ function submitForm(){
     // Initiate Variables With Form Content
     var name = $("#name").val();
     var email = $("#email").val();
-    var msg_subject = $("#msg_subject").val();
+    var phone = $("#phone").val();
     var message = $("#message").val();
 
 
     $.ajax({
         type: "POST",
-        url: "php/form-process.php",
-        data: "name=" + name + "&email=" + email + "&msg_subject=" + msg_subject + "&message=" + message,
-        success : function(text){
-            if (text == "success"){
+        url: "/contact",
+        data: {
+            name: name,
+            email: email,
+            phone: phone,
+            message: message
+        },
+        success : function(data){
+            if (data.success == true){
                 formSuccess();
             } else {
                 formError();
@@ -40,12 +45,14 @@ function formSuccess(){
 }
 
 function formError(){
+    console.log('failed')
     $("#contactForm").removeClass().addClass('shake animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
         $(this).removeClass();
     });
 }
 
 function submitMSG(valid, msg){
+    console.log('passed')
     if(valid){
         var msgClasses = "h3 text-center tada animated text-success";
     } else {
