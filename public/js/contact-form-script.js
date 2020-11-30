@@ -7,6 +7,7 @@ $("#contactForm").validator().on("submit", function (event) {
         // everything looks good!
         event.preventDefault();
         submitForm();
+        $("#submit").text("Sending...");
     }
 });
 
@@ -42,6 +43,7 @@ function submitForm(){
 function formSuccess(){
     $("#contactForm")[0].reset();
     submitMSG(true, "Message Submitted!")
+    $("#submit").text("Sent");
 }
 
 function formError(){
@@ -49,6 +51,7 @@ function formError(){
     $("#contactForm").removeClass().addClass('shake animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
         $(this).removeClass();
     });
+    $("#submit").text("Failed");
 }
 
 function submitMSG(valid, msg){
