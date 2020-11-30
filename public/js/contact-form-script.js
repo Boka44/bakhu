@@ -48,7 +48,6 @@ function formSuccess(){
 }
 
 function formError(){
-    console.log('failed')
     $("#contactForm").removeClass().addClass('shake animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
         $(this).removeClass();
     });
@@ -56,7 +55,6 @@ function formError(){
 }
 
 function submitMSG(valid, msg){
-    console.log('passed')
     if(valid){
         var msgClasses = "h3 text-center tada animated text-success";
     } else {
