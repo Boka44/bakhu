@@ -20,7 +20,8 @@ contactController.sendEmail = (req, res, next) => {
       'Access-Control-Allow-Origin': '*'
     })
     req.headers['Access-Control-Allow-Origin'] = '*'
-    // console.log(req.body);
+    console.log(req.body);
+    console.log(req.email)
     let email = req.body.email;
     let phone = req.body.phone;
     let name = req.body.name;

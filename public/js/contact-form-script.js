@@ -19,16 +19,17 @@ function submitForm(){
     var phone = $("#phone").val();
     var message = $("#message").val();
 
-
     $.ajax({
-        type: "POST",
+        method: "POST",
         url: "/contact",
-        data: {
+        data: JSON.stringify({
             name: name,
             email: email,
             phone: phone,
             message: message
-        },
+        }),
+        // dataType: 'json',
+        contentType: "application/json; charset=utf-8",
         success : function(data){
             if (data.success == true){
                 formSuccess();
