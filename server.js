@@ -15,6 +15,7 @@ const team = require('./routes/team');
 const contact = require('./routes/contact');
 const blank = require('./routes/blank');
 const corpgov = require('./routes/corpgov');
+const ourStory = require('./routes/our-story');
 
 app.use(bodyParser.json());
 
@@ -26,6 +27,7 @@ app.use('/team', team);
 app.use('/contact', contact);
 app.use('/blank', blank);
 app.use('/corpgov', corpgov);
+app.use('/our-story', ourStory);
 
 const contactController = require('./controllers/contact');
 app.post('/contact', contactController.sendEmail);
