@@ -16,6 +16,9 @@ const contact = require('./routes/contact');
 const blank = require('./routes/blank');
 const corpgov = require('./routes/corpgov');
 const ourStory = require('./routes/our-story');
+const stockInfo = require('./routes/stock-info');
+const news = require('./routes/news');
+const secFilings = require('./routes/secfilings');
 
 app.use(bodyParser.json());
 
@@ -28,6 +31,9 @@ app.use('/contact', contact);
 app.use('/blank', blank);
 app.use('/corpgov', corpgov);
 app.use('/our-story', ourStory);
+app.use('/stock-info', stockInfo);
+app.use('./news', news);
+app.use('/secfilings', secFilings);
 
 const contactController = require('./controllers/contact');
 app.post('/contact', contactController.sendEmail);
