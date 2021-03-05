@@ -1,19 +1,15 @@
 /* only small desktops */
 /* tablets */
-@media (max-width: 991px) {
+@media (max-width: 991px) and (min-width: 756px) {
   #nav-logo {
     width: 20%; }
   .navbar-brand {
     width: 50%; } }
+  @media (max-width: 991px) and (min-width: 756px) and (max-width: 680px) {
+    .navbar-brand {
+      width: 80%; } }
 
 /* only small tablets */
-@media (min-width: 768px) and (max-width: 991px) {
-  .navbar-toggler {
-    display: flex;
-    float: right;
-    padding-left: 40%;
-    color: #2d30f7; } }
-
 /* mobile or only mobile */
 @media (max-width: 767px) {
   .section {

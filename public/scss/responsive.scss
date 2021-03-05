@@ -8,25 +8,31 @@ $green: rgb(45, 48, 247);
 }
 
 /* tablets */
-@media (max-width: 991px) {
+@media (max-width: 991px) and (min-width: 756px) {
     #nav-logo {
         width: 20%;
     }
 
     .navbar-brand {
         width: 50%;
+        @media (max-width: 756px) {
+            // width: 60% !important;
+        }
+        @media (max-width: 680px) {
+            width: 80%;
+        }
     }
 }
 
 /* only small tablets */
 @media (min-width: 768px) and (max-width: 991px) {
 
-    .navbar-toggler {
-        display: flex;
-        float: right;
-        padding-left: 40%;
-        color: $green;
-    }
+    // .navbar-toggler {
+    //     display: flex;
+    //     float: right;
+    //     padding-left: 40%;
+    //     color: $green;
+    // }
 
     // #hero-area .contents h1{
     //     font-size: 28px;

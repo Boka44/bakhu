@@ -403,6 +403,9 @@ button:focus {
    ========================================================================== */
 #nav-logo {
   width: 40%; }
+  @media screen and (max-width: 1000px) {
+    #nav-logo {
+      width: 50% !important; } }
 
 .navbar-header {
   width: 85%; }
@@ -509,7 +512,7 @@ button:focus {
 .slicknav_menu {
   display: none; }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991px) {
   .navbar {
     height: 13%; }
   .navbar-header {
@@ -517,9 +520,17 @@ button:focus {
   .navbar-brand {
     position: absolute;
     padding: 15px;
-    top: 0; }
+    top: 0; } }
+  @media screen and (max-width: 991px) and (max-width: 756px) {
+    .navbar-brand {
+      width: 60% !important; } }
+  @media screen and (max-width: 991px) and (max-width: 680px) {
+    .navbar-brand {
+      width: 80% !important; } }
+
+@media screen and (max-width: 991px) {
     .navbar-brand img {
-      width: 70%; }
+      width: 75% !important; }
   #mobile-menu {
     display: none; }
   .slicknav_menu {
@@ -574,7 +585,7 @@ button:focus {
   5. Services section
    ========================================================================== */
 .item-boxes {
-  text-align: center;
+  text-align: justify;
   padding: 0px 15px;
   margin-bottom: 15px;
   -webkit-transition: all 0.3s ease 0s;
@@ -1101,3 +1112,300 @@ footer {
       color: #fff; }
       .copyright p a:hover {
         color: #58d86d; }
+
+.dna-strain {
+  width: 200px;
+  margin: 0 auto;
+  transform: scale(0.8);
+  transition: 3.3s all ease-in-out; }
+
+.dna-strain.flip-the-strain {
+  transform: scale(0.5) rotate(90deg);
+  transform-origin: center center; }
+
+.dna-strain .dna-line {
+  width: 0%;
+  padding: 10px 0;
+  height: 25px;
+  font-size: 0;
+  position: relative;
+  margin: 0 auto;
+  animation: 1s closeOpen ease-in-out infinite backwards; }
+
+.dna-strain .dna-line i.circle {
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  position: absolute;
+  z-index: 3;
+  animation: 1s circleColor ease-in-out infinite backwards; }
+
+.dna-strain .dna-line i.circle.circle-left {
+  left: 0;
+  transform: translateX(-12.5px); }
+
+.dna-strain .dna-line i.circle.circle-right {
+  right: 0;
+  transform: translateX(12.5px); }
+
+.dna-strain .dna-line b.line {
+  height: 5px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: #58d86d;
+  top: 93%;
+  transform: translateY(-50%);
+  animation: linesColor 1s linear infinite; }
+
+.dna-line.dna-line-0 {
+  animation-delay: 0.25s; }
+
+.dna-line.dna-line-0 .line {
+  animation-delay: 0.4s; }
+
+.dna-strain .dna-line-0 i.circle.circle-left {
+  animation-delay: 0.15s; }
+
+.dna-line.dna-line-1 {
+  animation-delay: 0.4s; }
+
+.dna-line.dna-line-1 .line {
+  animation-delay: 0.6s; }
+
+.dna-strain .dna-line-1 i.circle.circle-left {
+  animation-delay: 0.2s; }
+
+.dna-line.dna-line-2 {
+  animation-delay: 0.55s; }
+
+.dna-line.dna-line-2 .line {
+  animation-delay: 0.8s; }
+
+.dna-strain .dna-line-2 i.circle.circle-left {
+  animation-delay: 0.25s; }
+
+.dna-line.dna-line-3 {
+  animation-delay: 0.7s; }
+
+.dna-line.dna-line-3 .line {
+  animation-delay: 1s; }
+
+.dna-strain .dna-line-3 i.circle.circle-left {
+  animation-delay: 0.3s; }
+
+.dna-line.dna-line-4 {
+  animation-delay: 0.85s; }
+
+.dna-line.dna-line-4 .line {
+  animation-delay: 1.2s; }
+
+.dna-strain .dna-line-4 i.circle.circle-left {
+  animation-delay: 0.35s; }
+
+.dna-line.dna-line-5 {
+  animation-delay: 1s; }
+
+.dna-line.dna-line-5 .line {
+  animation-delay: 1.4s; }
+
+.dna-strain .dna-line-5 i.circle.circle-left {
+  animation-delay: 0.4s; }
+
+.dna-line.dna-line-6 {
+  animation-delay: 1.15s; }
+
+.dna-line.dna-line-6 .line {
+  animation-delay: 1.6s; }
+
+.dna-strain .dna-line-6 i.circle.circle-left {
+  animation-delay: 0.45s; }
+
+.dna-line.dna-line-7 {
+  animation-delay: 1.3s; }
+
+.dna-line.dna-line-7 .line {
+  animation-delay: 1.8s; }
+
+.dna-strain .dna-line-7 i.circle.circle-left {
+  animation-delay: 0.5s; }
+
+.dna-line.dna-line-8 {
+  animation-delay: 1.45s; }
+
+.dna-line.dna-line-8 .line {
+  animation-delay: 2s; }
+
+.dna-strain .dna-line-8 i.circle.circle-left {
+  animation-delay: 0.55s; }
+
+.dna-line.dna-line-9 {
+  animation-delay: 1.6s; }
+
+.dna-line.dna-line-9 .line {
+  animation-delay: 2.2s; }
+
+.dna-strain .dna-line-9 i.circle.circle-left {
+  animation-delay: 0.6s; }
+
+.dna-line.dna-line-10 {
+  animation-delay: 1.75s; }
+
+.dna-line.dna-line-10 .line {
+  animation-delay: 2.4s; }
+
+.dna-strain .dna-line-10 i.circle.circle-left {
+  animation-delay: 0.65s; }
+
+.dna-line.dna-line-11 {
+  animation-delay: 1.9s; }
+
+.dna-line.dna-line-11 .line {
+  animation-delay: 2.6s; }
+
+.dna-strain .dna-line-11 i.circle.circle-left {
+  animation-delay: 0.7s; }
+
+.dna-line.dna-line-12 {
+  animation-delay: 2.05s; }
+
+.dna-line.dna-line-12 .line {
+  animation-delay: 2.8s; }
+
+.dna-strain .dna-line-12 i.circle.circle-left {
+  animation-delay: 0.75s; }
+
+.dna-line.dna-line-13 {
+  animation-delay: 2.2s; }
+
+.dna-line.dna-line-13 .line {
+  animation-delay: 3s; }
+
+.dna-strain .dna-line-13 i.circle.circle-left {
+  animation-delay: 0.8s; }
+
+.dna-line.dna-line-14 {
+  animation-delay: 2.35s; }
+
+.dna-line.dna-line-14 .line {
+  animation-delay: 3.2s; }
+
+.dna-strain .dna-line-14 i.circle.circle-left {
+  animation-delay: 0.85s; }
+
+.dna-line.dna-line-15 {
+  animation-delay: 2.5s; }
+
+.dna-line.dna-line-15 .line {
+  animation-delay: 3.4s; }
+
+.dna-strain .dna-line-15 i.circle.circle-left {
+  animation-delay: 0.9s; }
+
+.dna-line.dna-line-16 {
+  animation-delay: 2.65s; }
+
+.dna-line.dna-line-16 .line {
+  animation-delay: 3.6s; }
+
+.dna-strain .dna-line-16 i.circle.circle-left {
+  animation-delay: 0.95s; }
+
+.dna-line.dna-line-17 {
+  animation-delay: 2.8s; }
+
+.dna-line.dna-line-17 .line {
+  animation-delay: 3.8s; }
+
+.dna-strain .dna-line-17 i.circle.circle-left {
+  animation-delay: 1s; }
+
+.dna-line.dna-line-18 {
+  animation-delay: 2.95s; }
+
+.dna-line.dna-line-18 .line {
+  animation-delay: 4s; }
+
+.dna-strain .dna-line-18 i.circle.circle-left {
+  animation-delay: 1.05s; }
+
+.dna-line.dna-line-19 {
+  animation-delay: 3.1s; }
+
+.dna-line.dna-line-19 .line {
+  animation-delay: 4.2s; }
+
+.dna-strain .dna-line-19 i.circle.circle-left {
+  animation-delay: 1.1s; }
+
+.dna-line.dna-line-20 {
+  animation-delay: 3.25s; }
+
+.dna-line.dna-line-20 .line {
+  animation-delay: 4.4s; }
+
+.dna-strain .dna-line-20 i.circle.circle-left {
+  animation-delay: 1.15s; }
+
+.dna-line.dna-line-21 {
+  animation-delay: 3.4s; }
+
+.dna-line.dna-line-21 .line {
+  animation-delay: 4.6s; }
+
+.dna-strain .dna-line-21 i.circle.circle-left {
+  animation-delay: 1.2s; }
+
+.dna-line.dna-line-22 {
+  animation-delay: 3.55s; }
+
+.dna-line.dna-line-22 .line {
+  animation-delay: 4.8s; }
+
+.dna-strain .dna-line-22 i.circle.circle-left {
+  animation-delay: 1.25s; }
+
+.dna-line.dna-line-23 {
+  animation-delay: 3.7s; }
+
+.dna-line.dna-line-23 .line {
+  animation-delay: 5s; }
+
+.dna-strain .dna-line-23 i.circle.circle-left {
+  animation-delay: 1.3s; }
+
+.dna-line.dna-line-24 {
+  animation-delay: 3.85s; }
+
+.dna-line.dna-line-24 .line {
+  animation-delay: 5.2s; }
+
+.dna-strain .dna-line-24 i.circle.circle-left {
+  animation-delay: 1.35s; }
+
+@keyframes circleColor {
+  0% {
+    background-color: #19936F; }
+  50% {
+    background-color: #58d86d; }
+  100% {
+    background-color: #19936F; } }
+
+@keyframes linesColor {
+  0% {
+    opacity: 0.2; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0.2; } }
+
+@keyframes closeOpen {
+  0% {
+    width: 0%; }
+  50% {
+    width: 100%; }
+  100% {
+    width: 0%; } }

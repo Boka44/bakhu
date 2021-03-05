@@ -25,7 +25,7 @@ app.use(bodyParser.json());
 app.set('view engine', 'ejs');
 
 app.use('/', home);
-app.use('/news', investors);
+app.use('/investors', investors);
 app.use('/management', team);
 app.use('/contact', contact);
 app.use('/blank', blank);
