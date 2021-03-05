@@ -17,6 +17,7 @@
     //Initiat WOW JS
     new WOW().init();
 
+
     // one page navigation 
     $('.main-navigation').onePageNav({
             currentClass: 'active'

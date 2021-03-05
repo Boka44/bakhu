@@ -11,9 +11,20 @@ $letter-spacing: 0px;
  $blue: rgb(89, 92, 255);
  $blue-drack: #3335b3;
 
+ $purple: #4d2275;
+ 
+
+//  Theme 2
+$green: #58d86d;
+$black: black;
+$darkGrey: #292f35;
+
 //Current Preset Declareation
- $preset:  $blue;
+ $preset:  $green;
  $preset-drack:  $blue-drack;
+ $nav-color: $black;
+$footer-color: $darkGrey;
+$navTextColor: white;
 
  //Global
  .white-text {
@@ -464,7 +475,7 @@ $letter-spacing: 0px;
    4. Navbar Style
    ========================================================================== */
 	#nav-logo {
-		width: 10%;
+		width: 40%;
 	}
 	.navbar-header{
 	    width: 85%;
@@ -473,7 +484,20 @@ $letter-spacing: 0px;
 	  position: relative;
 	  padding: 0px;
 	}
+	.light-logo {
+		display: inherit !important;
+	}
+	.dark-logo {
+		display: none !important;
+	}
 	.top-nav-collapse{
+
+		.light-logo {
+			display: none !important;
+		}
+		.dark-logo {
+			display: inherit !important;
+		}
 	  background: #fff;
 	  z-index: 999999;
 	  top: 0px!important;
@@ -499,6 +523,43 @@ $letter-spacing: 0px;
 	  }
 		.navbar-nav .nav-link.active{
 			color: #fff!important;
+		}
+
+		.sub-menu {
+			display: none;
+			// background-color: red;
+			width: 100%;
+			z-index: 1;
+			position: absolute;
+			padding-left: 28px;
+			
+	
+			li:first-child {
+				margin-top: 0px;
+			}
+	
+			li {
+				
+				padding-bottom: 8px;
+				a {
+					color: black;
+				}
+			}
+		}
+		.sub-alt {
+			background-color: white;
+			width: 130px;
+		}
+	
+		.sub-menu:hover {
+			display: block;
+		}
+	
+		.sub-menu li:hover {
+			color: white;
+			// background: #f8f9fa;
+			cursor: pointer;
+	
 		}
 	}
 	.indigo{
@@ -580,14 +641,14 @@ $letter-spacing: 0px;
 	  }
 	  .slicknav_nav .active a{
 	    background: $preset;
-	    color: #fff;
+	    color: $navTextColor;
 	  }
 	  .slicknav_nav a:hover, .slicknav_nav .active{
 	    color: $preset;
-	    background: #f8f9fa;
+	    background: $navTextColor;
 	  }
 	  .slicknav_nav .dropdown li a.active{
-	    background: #f8f9fa;
+	    background: $navTextColor;
 	    color: $preset;
 	  }
 	  .slicknav_nav {
@@ -616,12 +677,12 @@ $letter-spacing: 0px;
 			
 			padding-bottom: 8px;
 			a {
-				color: white;
+				color: $navTextColor;
 			}
 		}
 	}
 	.sub-alt {
-		background-color: black;
+		background-color: $nav-color;
     	width: 130px;
 	}
 
@@ -1315,7 +1376,7 @@ $letter-spacing: 0px;
 15. Footer Style
  ========================================================================== */
 footer{
-	background: #292f35;
+	background: $footer-color;
 	padding: 20px 0;
 }
 .footer-links{

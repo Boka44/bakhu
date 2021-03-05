@@ -60,7 +60,7 @@ p {
   line-height: 26px; }
 
 a:hover, a:focus {
-  color: #595cff; }
+  color: #58d86d; }
 
 a {
   -webkit-transition: all 0.2s linear;
@@ -89,7 +89,7 @@ a:not([href]):not([tabindex]) {
   color: #fff; }
 
 a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
-  color: #595cff; }
+  color: #58d86d; }
 
 /* ==========================================================================
    2.1 Section Title
@@ -109,7 +109,7 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
     color: #333;
     position: relative; }
     .section-header .section-title span {
-      color: #595cff; }
+      color: #58d86d; }
   .section-header .section-subtitle {
     margin-top: 15px;
     color: #333;
@@ -120,7 +120,7 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
   margin: auto;
   width: 70px;
   position: relative;
-  border-top: 4px solid #595cff;
+  border-top: 4px solid #58d86d;
   margin-top: 8px; }
 
 /* ==========================================================================
@@ -146,8 +146,8 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
   color: #fff; }
 
 .btn-common {
-  border: 1px solid #595cff;
-  background: #595cff;
+  border: 1px solid #58d86d;
+  background: #58d86d;
   position: relative;
   color: #fff;
   z-index: 1;
@@ -168,7 +168,7 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
   .btn-border:hover {
     border: 2px solid #fff;
     color: #fff;
-    background-color: #595cff; }
+    background-color: #58d86d; }
 
 .btn-lg {
   padding: 14px 33px;
@@ -288,7 +288,7 @@ button:focus {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background-color: #595cff;
+  background-color: #58d86d;
   opacity: 0.6;
   position: absolute;
   top: 0;
@@ -332,7 +332,7 @@ button:focus {
   font-size: 14px;
   text-align: center;
   border-radius: 4px;
-  background-color: #595cff;
+  background-color: #58d86d;
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
@@ -353,7 +353,7 @@ button:focus {
     height: 100%;
     top: 0px;
     left: 0px;
-    background: #595cff;
+    background: #58d86d;
     opacity: 0.9; }
   #hero-area .contents {
     padding: 200px 0 130px; }
@@ -396,13 +396,13 @@ button:focus {
       -o-transition: all 0.2s linear;
       transition: all 0.2s linear; }
       #hero-area .banner_bottom_btn i:hover {
-        color: #595cff; }
+        color: #58d86d; }
 
 /* ==========================================================================
    4. Navbar Style
    ========================================================================== */
 #nav-logo {
-  width: 10%; }
+  width: 40%; }
 
 .navbar-header {
   width: 85%; }
@@ -410,6 +410,12 @@ button:focus {
 .navbar-brand {
   position: relative;
   padding: 0px; }
+
+.light-logo {
+  display: inherit !important; }
+
+.dark-logo {
+  display: none !important; }
 
 .top-nav-collapse {
   background: #fff;
@@ -424,6 +430,10 @@ button:focus {
   -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown;
   background: #fff !important; }
+  .top-nav-collapse .light-logo {
+    display: none !important; }
+  .top-nav-collapse .dark-logo {
+    display: inherit !important; }
   .top-nav-collapse .navbar-brand {
     top: 0px; }
   .top-nav-collapse .navbar-nav .nav-link {
@@ -431,9 +441,29 @@ button:focus {
     margin-top: 0px !important;
     margin-bottom: 0px !important; }
     .top-nav-collapse .navbar-nav .nav-link:hover {
-      color: #595cff !important; }
+      color: #58d86d !important; }
   .top-nav-collapse .navbar-nav .nav-link.active {
     color: #fff !important; }
+  .top-nav-collapse .sub-menu {
+    display: none;
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+    padding-left: 28px; }
+    .top-nav-collapse .sub-menu li:first-child {
+      margin-top: 0px; }
+    .top-nav-collapse .sub-menu li {
+      padding-bottom: 8px; }
+      .top-nav-collapse .sub-menu li a {
+        color: black; }
+  .top-nav-collapse .sub-alt {
+    background-color: white;
+    width: 130px; }
+  .top-nav-collapse .sub-menu:hover {
+    display: block; }
+  .top-nav-collapse .sub-menu li:hover {
+    color: white;
+    cursor: pointer; }
 
 .indigo {
   background: transparent; }
@@ -453,21 +483,21 @@ button:focus {
 .navbar-expand-lg .navbar-nav li a:hover,
 .navbar-expand-lg .navbar-nav li .active > a,
 .navbar-expand-lg .navbar-nav li a:focus {
-  color: #595cff; }
+  color: #58d86d; }
 
 .navbar .nav-link.active {
   color: #fff !important;
-  background: #595cff; }
+  background: #58d86d; }
 
 .dropdown-toggle::after {
   display: none; }
 
 .slicknav_btn {
-  border-color: #595cff;
+  border-color: #58d86d;
   margin-bottom: 13%; }
 
 .slicknav_menu .slicknav_icon-bar {
-  background: #595cff; }
+  background: #58d86d; }
 
 /* only small tablets */
 .navbar-toggler {
@@ -495,14 +525,14 @@ button:focus {
   .slicknav_menu {
     display: block; }
   .slicknav_nav .active a {
-    background: #595cff;
-    color: #fff; }
+    background: #58d86d;
+    color: white; }
   .slicknav_nav a:hover, .slicknav_nav .active {
-    color: #595cff;
-    background: #f8f9fa; }
+    color: #58d86d;
+    background: white; }
   .slicknav_nav .dropdown li a.active {
-    background: #f8f9fa;
-    color: #595cff; }
+    background: white;
+    color: #58d86d; }
   .slicknav_nav {
     max-height: 620px !important; } }
 
@@ -530,7 +560,7 @@ button:focus {
   display: block; }
 
 .sub-menu li:hover {
-  color: #595cff;
+  color: #58d86d;
   cursor: pointer; }
 
 .mobile-sub {
@@ -564,14 +594,14 @@ button:focus {
     .item-boxes .icon i {
       font-size: 26px;
       line-height: 60px;
-      color: #595cff; }
+      color: #58d86d; }
   .item-boxes h4 {
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 10px; }
 
 .item-boxes:hover .icon {
-  background: #595cff; }
+  background: #58d86d; }
 
 .item-boxes:hover .icon i {
   color: #fff; }
@@ -600,7 +630,7 @@ button:focus {
   #features .box-item {
     padding: 15px 0; }
     #features .box-item .icon {
-      border: 1px solid #595cff;
+      border: 1px solid #58d86d;
       text-align: center;
       float: left;
       -webkit-transition: all 0.2s linear;
@@ -608,7 +638,7 @@ button:focus {
       -o-transition: all 0.2s linear;
       transition: all 0.2s linear; }
       #features .box-item .icon i {
-        color: #595cff;
+        color: #58d86d;
         font-size: 24px;
         line-height: 60px;
         -webkit-transition: all 0.2s linear;
@@ -618,7 +648,7 @@ button:focus {
     #features .box-item .text {
       padding-left: 80px; }
       #features .box-item .text h4 {
-        color: #595cff;
+        color: #58d86d;
         font-weight: 700;
         font-size: 16px;
         text-transform: uppercase;
@@ -627,7 +657,7 @@ button:focus {
         font-size: 14px;
         line-height: 26px; }
     #features .box-item:hover .icon {
-      background: #595cff; }
+      background: #58d86d; }
       #features .box-item:hover .icon i {
         color: #ffffff; }
   #features .show-box img {
@@ -672,7 +702,7 @@ button:focus {
   height: 100%;
   top: 0px;
   left: 0px;
-  background: #595cff;
+  background: #58d86d;
   opacity: 0.9;
   filter: alpha(opacity=90); }
 
@@ -692,8 +722,8 @@ button:focus {
   text-align: center;
   padding: 0px 0px 20px; }
   .controls .active {
-    color: #595cff !important;
-    border-color: #595cff;
+    color: #58d86d !important;
+    border-color: #58d86d;
     background: transparent; }
   .controls .btn {
     text-transform: uppercase;
@@ -732,7 +762,7 @@ button:focus {
   height: 48px;
   width: 48px;
   line-height: 48px;
-  color: #595cff;
+  color: #58d86d;
   left: 50%;
   margin-left: -24px;
   margin-top: -24px;
@@ -747,10 +777,10 @@ button:focus {
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-  border: 1px solid #595cff;
+  border: 1px solid #58d86d;
   border-radius: 50%; }
   .overlay .item-icon:hover {
-    background: #595cff;
+    background: #58d86d;
     color: #fff; }
 
 .shot-item:hover .item-icon {
@@ -785,7 +815,7 @@ button:focus {
     display: inline-block;
     font-size: 48px;
     font-weight: 400;
-    color: #595cff;
+    color: #58d86d;
     margin-bottom: 20px; }
   .pricing-table .pricing-details ul {
     margin-bottom: 35px; }
@@ -851,7 +881,7 @@ button:focus {
     line-height: 30px; }
 
 .owl-theme .owl-controls .owl-page span {
-  background: #595cff; }
+  background: #58d86d; }
 
 .owl-theme .owl-controls {
   margin-top: 20px; }
@@ -868,7 +898,7 @@ button:focus {
   transition: 0.5s;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
   border-radius: 0px;
-  background: #595cff;
+  background: #58d86d;
   overflow: hidden; }
   .single-team img {
     width: 100%; }
@@ -904,7 +934,7 @@ button:focus {
       text-align: center;
       width: 34px;
       margin: 2px;
-      color: #595cff;
+      color: #58d86d;
       font-size: 14px;
       background: #fff;
       border-radius: 50px;
@@ -1004,7 +1034,7 @@ button:focus {
   margin-bottom: 45px; }
 
 .contact-us p span {
-  color: #595cff;
+  color: #58d86d;
   padding-left: 10px; }
 
 #contact {
@@ -1028,7 +1058,7 @@ button:focus {
 .form-control:focus {
   box-shadow: none;
   color: #fff;
-  border-color: #595cff;
+  border-color: #58d86d;
   background: transparent;
   outline: none; }
 
@@ -1060,7 +1090,7 @@ footer {
       -webkit-transition: all 0.3s ease-in-out;
       -moz-transition: all 0.3s ease-in-out; }
       .footer-links li a:hover {
-        color: #595cff; }
+        color: #58d86d; }
 
 .copyright {
   margin-top: 10px;
@@ -1070,4 +1100,4 @@ footer {
     .copyright p a {
       color: #fff; }
       .copyright p a:hover {
-        color: #595cff; }
+        color: #58d86d; }

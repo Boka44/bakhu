@@ -26,7 +26,7 @@ app.set('view engine', 'ejs');
 
 app.use('/', home);
 app.use('/news', investors);
-app.use('/team', team);
+app.use('/management', team);
 app.use('/contact', contact);
 app.use('/blank', blank);
 app.use('/corpgov', corpgov);
