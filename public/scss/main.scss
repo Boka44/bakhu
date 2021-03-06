@@ -401,12 +401,15 @@ $navTextColor: white;
    3. Hero Area
    ========================================================================== */
 	#hero-area{
-		background: url(../img/biotech-bg.jpeg) fixed no-repeat;
+		background: url(../img/DNA.jpg) fixed no-repeat;
 		background-size: cover;
 		// filter: grayscale(50%);
 		color: #fff;
 		overflow: hidden;
 		position: relative;
+		@media screen and (max-width: 1000px) {
+			background-position: 80% 0%;
+		}
 		.overlay{
 			position: absolute;
 			width: 100%;
@@ -761,7 +764,7 @@ $navTextColor: white;
   6. Features Section Style
    ========================================================================== */
 	#features{
-		background: url(../img/DNA.jpg) fixed no-repeat;
+		background: url('../img/Baklhu Cell Replication Image.jpg') fixed no-repeat;
 		background-size: cover;
 		color: #fff;
 		overflow: hidden;
