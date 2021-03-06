@@ -8,69 +8,79 @@ $green: rgb(45, 48, 247);
 }
 
 /* tablets */
-@media (max-width: 991px) {
+@media (max-width: 991px) and (min-width: 756px) {
     #nav-logo {
         width: 20%;
     }
 
     .navbar-brand {
         width: 50%;
+        @media (max-width: 756px) {
+            // width: 60% !important;
+        }
+        @media (max-width: 680px) {
+            width: 80%;
+        }
     }
 }
 
 /* only small tablets */
 @media (min-width: 768px) and (max-width: 991px) {
 
-    .navbar-toggler {
-        display: flex;
-        float: right;
-        padding-left: 40%;
-        color: $green;
-    }
+    // .navbar-toggler {
+    //     display: flex;
+    //     float: right;
+    //     padding-left: 40%;
+    //     color: $green;
+    // }
 
-    #hero-area .contents h1{
-        font-size: 28px;
-    }
-    .item-boxes h4{
-        font-size: 18px;
-    }
-    #features .show-box img{
-        display: none;
-    }
-    .pricing-table .pricing-details ul li{
-        font-size: 12px;
-    }
-    .counters .facts-item .fact-count h4{
-        font-size: 14px;
-    }
-    .single-team{
-        margin-bottom: 30px;
-    }
-    .meta-tags span{
-        margin-right: 3px;
-    }
-    .meta-tags span i{
-        margin-right: 0px;
-    }
-    #blog .blog-item-text h3{
-        font-size: 14px;
-        line-height: 20px;
-    }
+    // #hero-area .contents h1{
+    //     font-size: 28px;
+    // }
+    // .item-boxes h4{
+    //     font-size: 18px;
+    // }
+    // #features .show-box img{
+    //     display: none;
+    // }
+    // .pricing-table .pricing-details ul li{
+    //     font-size: 12px;
+    // }
+    // .counters .facts-item .fact-count h4{
+    //     font-size: 14px;
+    // }
+    // .single-team{
+    //     margin-bottom: 30px;
+    // }
+    // .meta-tags span{
+    //     margin-right: 3px;
+    // }
+    // .meta-tags span i{
+    //     margin-right: 0px;
+    // }
+    // #blog .blog-item-text h3{
+    //     font-size: 14px;
+    //     line-height: 20px;
+    // }
 
 }
 
 /* mobile or only mobile */
 @media (max-width: 767px) {
+
+    .section{
+		padding: 140px 0;
+	}
     .section-header .section-title{
         font-size: 20px;
     }
-    #hero-area .contents{
-        padding: 100px 0 80px;
-    }
-    #hero-area .contents h1{
-        font-size: 18px;
-        line-height: 30px;
-    }
+    // #hero-area .contents{
+    //     // padding: 100px 0 80px;
+    // }
+    // #hero-area .contents h1{
+    //     // font-size: 18px;
+    //     // line-height: 30px;
+    // }
     #features .show-box img{
         display: none;
     }

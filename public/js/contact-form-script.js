@@ -7,6 +7,7 @@ $("#contactForm").validator().on("submit", function (event) {
         // everything looks good!
         event.preventDefault();
         submitForm();
+        $("#submit").text("Sending...");
     }
 });
 
@@ -15,22 +16,23 @@ function submitForm(){
     // Initiate Variables With Form Content
     var name = $("#name").val();
     var email = $("#email").val();
-    // var msg_subject = $("#msg_subject").val();
+
     var phone = $("#phone").val();
     var message = $("#message").val();
 
-
     $.ajax({
-        type: "POST",
-        url: "/api/contact",
-        contentType: "application/json; charset=utf-8",
-        dataType: 'json',
+
+        method: "POST",
+        url: "/contact",
         data: JSON.stringify({
-            "name": name,
-            "email": email,
-            "phone": phone,
-            "message": message
+            name: name,
+            email: email,
+            phone: phone,
+            message: message
         }),
+        // dataType: 'json',
+        contentType: "application/json; charset=utf-8",
+
         success : function(data){
             if (data.success == true){
                 formSuccess();
@@ -45,12 +47,14 @@ function submitForm(){
 function formSuccess(){
     $("#contactForm")[0].reset();
     submitMSG(true, "Message Submitted!")
+    $("#submit").text("Sent");
 }
 
 function formError(){
     $("#contactForm").removeClass().addClass('shake animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
         $(this).removeClass();
     });
+    $("#submit").text("Failed");
 }
 
 function submitMSG(valid, msg){

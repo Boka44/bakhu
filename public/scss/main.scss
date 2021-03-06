@@ -11,14 +11,39 @@ $letter-spacing: 0px;
  $blue: rgb(89, 92, 255);
  $blue-drack: #3335b3;
 
+ $purple: #4d2275;
+ 
+
+//  Theme 2
+$green: #58d86d;
+$black: black;
+$darkGrey: #292f35;
+
 //Current Preset Declareation
- $preset:  $blue;
+ $preset:  $green;
  $preset-drack:  $blue-drack;
+ $nav-color: $black;
+$footer-color: $darkGrey;
+$navTextColor: white;
 
  //Global
  .white-text {
 	color: white !important;
  }
+
+ .italic {
+	 font-style: italic;
+ }
+
+ .padding-top {
+	 padding-top: 150px !important;
+ }
+
+ .stock-info {
+    height: 600px;
+    margin-top: 1em;
+    margin-left: 1em;
+}
  
 	
 /* ------------------------------------- */
@@ -108,7 +133,7 @@ $letter-spacing: 0px;
    2.1 Section Title
    ========================================================================== */
 	.section{
-		padding: 80px 0;
+		padding: 100px 0;
 	}
 	.section-header{
 		color: #fff;
@@ -131,13 +156,7 @@ $letter-spacing: 0px;
 			font-size: 14px;
 			font-weight: 400;
 		}
-		.lines{
-			margin: auto;
-			width: 90px;
-			position: relative;
-			border-top: 4px solid $preset;
-			margin-top: 15px;
-		}
+
 	}
 
 /* ==========================================================================
@@ -368,12 +387,15 @@ $letter-spacing: 0px;
    3. Hero Area
    ========================================================================== */
 	#hero-area{
-		background: url(../img/biotech-bg.jpeg) fixed no-repeat;
+		background: url(../img/DNA.jpg) fixed no-repeat;
 		background-size: cover;
 		// filter: grayscale(50%);
 		color: #fff;
 		overflow: hidden;
 		position: relative;
+		@media screen and (max-width: 1000px) {
+			background-position: 80% 0%;
+		}
 		.overlay{
 			position: absolute;
 			width: 100%;
@@ -442,13 +464,33 @@ $letter-spacing: 0px;
    4. Navbar Style
    ========================================================================== */
 	#nav-logo {
-		width: 10%;
+		width: 40%;
+
+		@media screen and (max-width: 1000px) {
+			width: 50% !important;
+		}
 	}
+	.navbar-header{
+	    width: 85%;
+	  }
 	.navbar-brand{
 	  position: relative;
 	  padding: 0px;
 	}
+	.light-logo {
+		display: inherit !important;
+	}
+	.dark-logo {
+		display: none !important;
+	}
 	.top-nav-collapse{
+
+		.light-logo {
+			display: none !important;
+		}
+		.dark-logo {
+			display: inherit !important;
+		}
 	  background: #fff;
 	  z-index: 999999;
 	  top: 0px!important;
@@ -474,6 +516,43 @@ $letter-spacing: 0px;
 	  }
 		.navbar-nav .nav-link.active{
 			color: #fff!important;
+		}
+
+		.sub-menu {
+			display: none;
+			// background-color: red;
+			width: 100%;
+			z-index: 1;
+			position: absolute;
+			padding-left: 28px;
+			
+	
+			li:first-child {
+				margin-top: 0px;
+			}
+	
+			li {
+				
+				padding-bottom: 8px;
+				a {
+					color: black;
+				}
+			}
+		}
+		.sub-alt {
+			background-color: white;
+			width: 130px;
+		}
+	
+		.sub-menu:hover {
+			display: block;
+		}
+	
+		.sub-menu li:hover {
+			color: white;
+			// background: #f8f9fa;
+			cursor: pointer;
+	
 		}
 	}
 	.indigo{
@@ -505,16 +584,21 @@ $letter-spacing: 0px;
 	}
 	.slicknav_btn{
 	  border-color: $preset;
+	  margin-bottom: 13%;
 	}
 	.slicknav_menu .slicknav_icon-bar{
 	  background: $preset;
 	}
 	/* only small tablets */
-	@media (min-width: 768px) and (max-width: 991px) {
-	   #nav-main li a.nav-link{
-	    padding-top: 18px;
-	  }
-	}
+	// @media (min-width: 768px) and (max-width: 991px) {
+	//    #nav-main li a.nav-link{
+	//     padding-top: 18px;
+	//   }
+
+	//   .navbar {
+	// 	  height: 13%;
+	//   }
+	// }
 	.navbar-toggler{
 	  display: none;
 	}
@@ -526,7 +610,11 @@ $letter-spacing: 0px;
 	  display:none;
 	}
 
-	@media screen and (max-width: 768px) {
+	// @media screen and (max-width: 768px) {
+	@media screen and (max-width: 991px) {
+	.navbar {
+		height: 13%;
+	}
 	  .navbar-header{
 	    width: 100%;
 	  }
@@ -534,8 +622,14 @@ $letter-spacing: 0px;
 	    position: absolute;
 	    padding: 15px;
 	    top: 0;
+		@media (max-width: 756px) {
+            width: 60% !important;
+        }
+		@media (max-width: 680px) {
+            width: 80% !important;
+        }
 	    img{
-	      width: 70%;
+	      width: 75% !important;
 	    }
 	}
 	  #mobile-menu {
@@ -547,23 +641,76 @@ $letter-spacing: 0px;
 	  }
 	  .slicknav_nav .active a{
 	    background: $preset;
-	    color: #fff;
+	    color: $navTextColor;
 	  }
 	  .slicknav_nav a:hover, .slicknav_nav .active{
 	    color: $preset;
-	    background: #f8f9fa;
+	    background: $navTextColor;
 	  }
 	  .slicknav_nav .dropdown li a.active{
-	    background: #f8f9fa;
+	    background: $navTextColor;
 	    color: $preset;
 	  }
+	  .slicknav_nav {
+		  max-height: 620px !important;
+	  }
+	}
+
+	.nav-item:hover .sub-menu {
+		display: block;
+	}
+
+	.sub-menu {
+		display: none;
+		// background-color: red;
+		width: 100%;
+		z-index: 1;
+		position: absolute;
+		padding-left: 28px;
+		
+
+		li:first-child {
+			margin-top: -20px;
+		}
+
+		li {
+			
+			padding-bottom: 8px;
+			a {
+				color: $navTextColor;
+			}
+		}
+	}
+	.sub-alt {
+		background-color: $nav-color;
+    	width: 130px;
+	}
+
+	.sub-menu:hover {
+		display: block;
+	}
+
+	.sub-menu li:hover {
+		color: $preset;
+		// background: #f8f9fa;
+		cursor: pointer;
+
+	}
+
+	.mobile-sub {
+		color: #666 !important;
+		padding-left: 25px;
+	}
+
+	.bold {
+		font-weight: 600;
 	}
 
 /* ==========================================================================
   5. Services section
    ========================================================================== */
    .item-boxes{
-   		text-align: center;
+   		text-align: justify;
    		padding: 0px 15px;
    		margin-bottom: 15px;
    		-webkit-transition: all 0.3s ease 0s;
@@ -603,7 +750,7 @@ $letter-spacing: 0px;
   6. Features Section Style
    ========================================================================== */
 	#features{
-		background: url(../img/tech-bg-grey.png) fixed no-repeat;
+		background: url('../img/Baklhu Cell Replication Image.jpg') fixed no-repeat;
 		background-size: cover;
 		color: #fff;
 		overflow: hidden;
@@ -946,8 +1093,8 @@ $letter-spacing: 0px;
    .single-team:hover .team-details{
 		opacity: 1;
    }
-    .single-team:hover .team-inner{
-   }
+//     .single-team:hover .team-inner{
+//    }
    .single-team{
 		padding-top: 20px;
 	   	position: relative;
@@ -971,6 +1118,7 @@ $letter-spacing: 0px;
 			transition: 0.5s;
 			border-radius: 0px;
 			background: #f1f1f1;
+			margin-top: 15px;
 			padding: 15px;
 		.team-title{
 			margin-bottom: 5px;
@@ -982,7 +1130,7 @@ $letter-spacing: 0px;
 			color: #333;
 		}
 		.team-bio {
-			font-size: 12px;
+
 			height: 500px;
 			overflow-y: scroll;
 		}
@@ -1030,10 +1178,7 @@ $letter-spacing: 0px;
   13. Blog 
    ========================================================================== */
   #blog{
-	background-color: $preset;
-	color: white;
-	padding-left: 35px;
-	padding-right: 35px;
+
 
 	#blog-container {
 		.hrBlog {
@@ -1055,7 +1200,7 @@ $letter-spacing: 0px;
 				}
 				font-size: 2rem;
 				font-weight: normal;
-				color: white;
+				color: black;
 			}
 		}
 
@@ -1076,6 +1221,10 @@ $letter-spacing: 0px;
 			}
 		}
 	}
+
+	
+
+
 	
     // .blog-item-wrapper{
     // //   background: #fff;
@@ -1119,6 +1268,71 @@ $letter-spacing: 0px;
     //   	}    
     //   }
   }
+
+  .corpgov {
+	padding-left: 100px !important;
+	padding-right: 100px !important;
+	@media(max-width: 696px) {
+		padding-left: 80px !important;
+		padding-right: 80px !important;
+	}
+  }
+
+  .docs {
+	width: 100%;
+	text-align: center;
+
+	a {
+		font-size: 20px;
+		// color: white;
+		font-style: italic;
+		text-decoration: underline;
+		padding: 30px;
+
+		@media (max-width: 676px) {
+			font-size: 14px;
+		}
+	}
+}
+  .bold-under {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+#documents {
+	background: url(../img/abracadabra.jpg) fixed no-repeat;
+		background-size: cover;
+		// color: #fff;
+		overflow: hidden;
+		position: relative;
+		height: 550px;
+
+		p {
+			width: 455px;
+			margin: 0 auto;
+			text-align: center;
+			@media(max-width: 696px) {
+				width: 380px;
+			}
+		}
+		.pdf-wrapper {
+
+			display: flex;
+			width: 400px;
+			margin: 50px auto;
+
+			.pdf-container {
+				width: 200px;
+				display: block;
+				.pdf-img {
+					height: 115px;
+					margin-bottom: 10px;
+				}
+			}
+		}
+
+		
+}
 
  
 /* ==========================================================================
@@ -1179,7 +1393,7 @@ $letter-spacing: 0px;
 15. Footer Style
  ========================================================================== */
 footer{
-	background: #292f35;
+	background: $footer-color;
 	padding: 20px 0;
 }
 .footer-links{
@@ -1225,3 +1439,137 @@ p{
 	font-size: 1.5rem !important;
 }
 
+// DNA animation
+
+
+.dna-strain {
+
+	width: 200px;
+	margin: 0 auto;
+	// border: 1px solid rgba(0,0,0,.25);
+	transform: scale(0.8);
+	
+	transition: 3.3s all ease-in-out;
+  }
+  
+  .dna-strain.flip-the-strain {
+	 transform: scale(0.5) rotate(90deg) ;
+	 transform-origin: center center;
+  }
+  
+  
+  .dna-strain .dna-line {
+	width: 0%;
+	padding: 10px 0;
+	height: 25px;
+	font-size: 0;
+	position: relative;
+	margin: 0 auto;
+	animation: 1s closeOpen ease-in-out infinite backwards;
+  }
+  
+  
+  
+  
+  
+  .dna-strain .dna-line i.circle {
+	display: block;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background-color: #ffffff;
+	position: absolute;
+	z-index: 3;
+	animation: 1s circleColor ease-in-out infinite backwards;
+	
+  }
+  
+  .dna-strain .dna-line i.circle.circle-left {
+	left: 0;
+	transform: translateX(-12.5px);
+  }
+  .dna-strain .dna-line i.circle.circle-right {
+	right: 0;
+	transform: translateX(12.5px);
+  }
+  
+  .dna-strain .dna-line b.line {
+	height: 5px;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	background-color: $preset;
+	// background-color: rgba(255,255,255,1);
+	top: 93%;
+	transform: translateY(-50%);
+	animation: linesColor 1s linear infinite;
+  }
+  
+  
+  $i: 0;
+  $time: 0.1;
+  $timeForLine: 0.2;
+  $circleLeftTime: 0.1;
+  $circleRightTime: 0.1;
+  @while $i < 25 {
+	$time: ($time + 0.15);
+	.dna-line.dna-line-#{$i}  { 
+	  animation-delay: #{$time}s;
+	}
+	
+	$timeForLine: ($timeForLine + 0.2);
+	.dna-line.dna-line-#{$i} .line  { 
+	  animation-delay: #{$timeForLine}s;
+	}
+	
+	// Circle left
+	$circleLeftTime: ($circleLeftTime + 0.05);
+	.dna-strain .dna-line-#{$i} i.circle.circle-left {
+	  animation-delay: #{$circleLeftTime}s;
+	}
+	
+	
+	$i: $i + 1;
+  }
+  
+  
+  
+  @keyframes circleColor {
+	0% {
+	  background-color: #19936F;
+	}
+	
+	50% {
+	  background-color: $preset;
+	}
+	
+	100% {
+	  background-color: #19936F;
+	}
+  }
+  
+  @keyframes linesColor {
+	0% {
+	  opacity: 0.2;
+	}
+	50% {
+	  opacity: 1;
+	}
+	100% {
+	  opacity: 0.2;
+	}
+  }
+  @keyframes closeOpen {
+	0% {
+	  width: 0%;
+	}
+	
+	50% {
+	  width: 100%;
+	}
+	
+	100% {
+	  width: 0%;
+	}
+  }

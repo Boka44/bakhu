@@ -1,36 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174240258-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
 
-      gtag('config', 'UA-174240258-1');
-    </script>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="keywords" content="Bakhu, License, cannabinoids, cannabis, Technology, bio-technology">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="author" content="Grayrids">
-    <title>Bakhu Holdings</title>
-    <link rel="shortcut icon" type="image/png" href="/img/logo/favicon.ico"/>
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/line-icons.css">
-    <link rel="stylesheet" href="css/owl.carousel.css">
-    <link rel="stylesheet" href="css/owl.theme.css">
-    <link rel="stylesheet" href="css/nivo-lightbox.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/slicknav.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/main.css">    
-    <link rel="stylesheet" href="css/responsive.css">
+    <%- include('../partials/header') %>
 
   </head>
   <body>
@@ -42,7 +14,8 @@
         <div class="container">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
-            <a  class="navbar-brand"><img class="img-fulid" id="nav-logo" src="img/logo/white2.png" alt=""></a>
+            <a  class="navbar-brand light-logo"><img class="img-fulid" id="nav-logo" src="img/logo/BakhuHoldings_Logo_Horizontal_ColorLight.png" alt=""></a>
+            <a  class="navbar-brand dark-logo"><img class="img-fulid" id="nav-logo" src="img/logo/BakhuHoldings_Logo_Horizontal_ColorDark.png" alt=""></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
               <i class="lnr lnr-menu"></i>
             </button>
@@ -50,22 +23,71 @@
           <div class="collapse navbar-collapse" id="main-navbar">
             <ul class="navbar-nav mr-auto w-100 justify-content-end">
               <li class="nav-item">
-                <a class="nav-link page-scroll" href="#hero-area">Home</a>
+                <a class="nav-link page-scroll" href="/">Home</a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link page-scroll" href="/team">Our Team</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link page-scroll" href="#services">Business</a>
+
+                <a class="nav-link page-scroll" href="/news">News</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link page-scroll" href="#features">Licensing</a>
+                <a class="nav-link page-scroll" href="/corpgov">Corporate Governance</a>
+
               </li>
               <li class="nav-item">
-                <a class="nav-link page-scroll" href="#team">Team</a>
+                <a class="nav-link page-scroll" href="/contact">Contact</a>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="/management">About Us</a>
+                <ul class="sub-menu">
+                  <li class="sub-nav-item">
+                    <a href="/our-story">Our Story</a>
+                  </li>
+                  <li class="sub-nav-item">
+                    <a href="/management">Management</a>
+                  </li>
+                </ul> 
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link page-scroll" href="/blank">Cell Science</a>
+                <ul class="sub-menu">
+                  <li class="sub-nav-item">
+                    <a href="/blank">Team</a>
+                  </li>
+                  <li class="sub-nav-item">
+                    <a href="/blank">Technology</a>
+                  </li>
+                  <li class="sub-nav-item">
+                    <a href="/blank">Patents</a>
+                  </li>
+                </ul> 
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="/stock-info">Investors</a>
+                <ul class="sub-menu">
+                  <li class="sub-nav-item">
+                    <a href="/stock-info">Stock Info</a>
+                  </li>
+                  <li class="sub-nav-item">
+                    <a href="/secfilings">SEC Filings</a>
+                  </li>
+                  <li class="sub-nav-item">
+                    <a href="/corpgov">Corporate Governance</a>
+                  </li>
+                  <li class="sub-nav-item">
+                    <a href="/investors">Investor Relations / Transfer Agent</a>
+                  </li>
+                </ul> 
+              </li> 
+              <li class="nav-item">
+
+                <a class="nav-link page-scroll" href="/news">News & Media</a>
+
               </li>
               <li class="nav-item">
-                <a class="nav-link page-scroll" href="#blog">News</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link page-scroll" href="#contact">Contact</a>
+                <a class="nav-link page-scroll" href="/contact">Contact</a>
               </li>
             </ul>
           </div>
@@ -74,22 +96,48 @@
         <!-- Mobile Menu Start -->
         <ul class="mobile-menu">
            <li>
-              <a class="page-scroll" href="#hero-area">Home</a>
+              <a class="page-scroll bold" href="/">Home</a>
             </li>
             <li>
-              <a class="page-scroll" href="#services">Business</a>
+
+              <a class="page-scroll bold" href="/management">About Us</a>
+
+            </li>
+            <div class="mobile-sub">
+              <li>
+                <a href="/our-story">Our Story</a>
+              </li>
+              <li>
+                <a href="/management">Management</a>
+              </li>
+            </div>
+            <li>
+
+              <a class="page-scroll bold" href="/contact">Investors</a>
+
+            </li>
+            <div class="mobile-sub">
+              <li>
+                <a href="/stock-info">Stock Info</a>
+              </li>
+              <li>
+                <a href="/secfilings">SEC Filings</a>
+              </li>
+              <li>
+                <a href="/corpgov">Corporate Governance</a>
+              </li>
+              <li>
+                <a href="/investors">Investor Relations / Transfer Agent</a>
+              </li>
+            </div>
+            
+            <li>
+
+              <a class="page-scroll bold" href="/news">News & Media</a>
+
             </li>
             <li>
-              <a class="page-scroll" href="#features">Licensing</a>
-            </li>
-            <li>
-              <a class="page-scroll" href="#team">Team</a>
-            </li>
-            <li >
-              <a class="page-scroll" href="#blog">News</a>
-            </li>
-            <li>
-              <a class="page-scroll" href="#contact">Contact</a>
+              <a class="page-scroll bold" href="/contact">Contact</a>
             </li>
         </ul>
         <!-- Mobile Menu End -->
@@ -98,30 +146,25 @@
       <!-- Navbar End -->   
       <div class="container">      
         <div class="row justify-content-md-center">
-          <div class="col-lg-12 col-md-12 col-sm-12">
+
+          <div class="col-lg-5 col-md-12 col-sm-12" style="height: 50vh;">
+
             <div class="contents text-center">
               <h1 class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0.3s">Bakhu Holdings</h1>
               <!-- <p class="lead  wow fadeIn" data-wow-duration="1000ms" data-wow-delay="400ms">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p> -->
               <!-- <a href="#" class="btn btn-common wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">Download</a> -->
             </div>
           </div>
-          <!-- <div class="col-lg-5 col-md-12 col-sm-12">
-            <div class="contents text-center">
-              <div class="ticker">
-                <h1 class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0.3s"></h1>
-                <p class="lead  wow fadeIn" data-wow-duration="1000ms" data-wow-delay="400ms"></p>
-                <p class="lead  wow fadeIn date" data-wow-duration="1000ms" data-wow-delay="400ms"></p>
-              </div>
-              <a href="#" class="btn btn-common wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">Download</a> 
-            </div>
-          </div> -->
+
+         
+
         </div> 
       </div>           
     </header>
     <!-- Header Section End --> 
 
     <!-- Services Section Start -->
-    <section id="services" class="section">
+    <section id="services" class="section" style="min-height: 50vh;">
       <div class="container">
         <div class="section-header">          
           <h2 class="section-title wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">Business</h2>
@@ -145,8 +188,36 @@
     </section>
     <!-- Services Section End -->
 
+
+<!-- Features Section Start -->
+<section id="features" class="section" data-stellar-background-ratio="0.2" style="padding-top: 230px;">
+  <div class="container">
+    <div class="section-header">          
+      <h2 class="section-title">Get In Touch</h2>
+      <!-- <hr class="lines"> -->
+      <!-- <p class="section-subtitle wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">BUILDING THE FUTURE TOGETHER</p> -->
+    </div>
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-xs-12">
+        <div class="container text-center" style="height: 200px;">
+          <div class="item-boxes wow fadeInDown" data-wow-delay="0.8s">
+            <!-- <p>Our team of researchers uses targeted data, deep analysis, and real-time intelligence to answer the most important questions. Our products and opportunities are designed to improve efficiency, maximize yields and increase profits for larger commercial customers and smaller boutique operators. With our insights, you will capitalize on undervalued opportunities.</p> -->
+          </div>
+          <a class="page-scroll hover-pointer" style="color: white;" href="/contact">
+            <button class="btn btn-common" >
+              Contact
+            </button>
+          </a>  
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  </section>
+
+    
     <!-- Features Section Start -->
-    <section id="features" class="section" data-stellar-background-ratio="0.2">
+    <!-- <section id="features" class="section" data-stellar-background-ratio="0.2">
       <div class="container">
         <div class="section-header">          
           <h2 class="section-title">Licensing</h2>
@@ -186,7 +257,7 @@
                   </div>
                   <div class="col-lg-4 col-sm-12 col-xs-12 box-item wow fadeIn" data-wow-duration="1000ms" data-wow-delay="400ms">
                       
-                        <img class="img-fulid" src="img/features/feature.png" alt="">
+
                         <video width="100%" height="100%" autoplay controls style="padding: 5px;">
                             <source src="video/cell.webm" type="video/webm">
                           Your browser does not support the video tag.
@@ -203,10 +274,7 @@
 
  
 
-                        With well over a combined 25 years of experience, there is no shortage of brainpower at Cell Science LTD. As a matter of fact, it is our fueling agent.  </p>
-                    </div>
-                  </div>
-                 <div class="col-lg-6 col-sm-6 col-xs-12 box-item">
+
                     <span class="icon">
                       <i class="lnr lnr-layers"></i>
                     </span>
@@ -223,293 +291,15 @@
                       <h4>Easy to Customize</h4>
                       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
                     </div>
-                  </div> 
-              </div>
+
             </div>
           </div>
           
         </div>
-      </div> -->
-    </section> 
-    <!-- Features Section End -->    
-    
-    <!-- Team section Start -->
-    <section id="team" class="section">
-      <div class="container">
-        <div class="section-header">          
-          <h2 class="section-title">Our Team</h2>
-          <hr class="lines">
-          <!-- <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, dignissimos! <br> Lorem ipsum dolor sit amet, consectetur.</p> -->
-        </div>
-        <div class="row">
-          <div class="col-lg-6 col-md-6 col-xs-12">
-            <div class="single-team">
-              <!-- <img src="img/team/t1.jpeg" alt=""> -->
-              <div class="team-details">
-                <div class="team-inner">
-                  <h4 class="team-title">Thomas K Emmitt</h4>
-                  <p>CEO & Director</p>
-                  <p class="team-bio">Mr. Emmitt was appointed as the Chief Executive Officer and a Director of the Company on May 15, 2018 and is current the sole officer and director. In addition to his role as a Director and the Chief Executive Officer of the Company, Mr. Emmitt is principal of the Law Office of Tom Emmitt, a law firm specializing in civil litigation. Mr. Emmitt has successfully prosecuted over 400 civil cases in the areas of personal injury and employment law. From March 2009 through January 2016, Mr. Emmitt was in-house counsel to Green Medica Holdings Corporation, a nutraceutical company specializing in mushroom derivatives and DHA/GPC products. Beginning in January 2016, and continuing through the present, Mr. Emmitt has been in-house counsel to the Oz Corporation, a management consulting company providing services to small and mid-cap companies, and overseeing processes, strategic planning, startup funding and recruitment of management executives. Finally, Mr. Emmitt has been the President of Belltower Entertainment Corp. (BTOW), a publicly traded entity since December 2017. Mr. Emmitt is experienced in all phases of financial analysis, information technology and marketing. Mr. Emmitt is a graduate of Ventura College, and the West Los Angeles School of Law.</p>
-                  <!-- <ul class="social-list">
-                    <li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
-                    <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                    <li class="google-plus"><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                    <li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                  </ul> -->
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-6 col-xs-12">
-            <div class="single-team">
-              <!-- <img src="img/team/placeholder-man.jpg" alt=""> -->
-              <div class="team-details">
-                <div class="team-inner">
-                  <h4 class="team-title">Evripides (Roy) Drakos</h4>
-                  <p>Director</p>
-                  <p class="team-bio">is a strategy and business development associate for Viasat Inc., in California and a principal advisor for Private Equity investments in satellite engineering, renewable energy, satellite broadband, internet of things and cyber secure infrastructures, regulatory and licensing, patent development and investments while spearheading strategic partnerships with private and state own enterprises. Mr. Drakos is charismatic strategist and business development professional excelling in satellite communications, wireless networks, renewable energy and many more technocentric investment areas. Mr. Drakos has twenty five years of experience in satellite communications and a dozen years involved in special projects in the field of pioneering technology and marketing strategies accumulating unique skills and knowledge authority in the industry. Since 2017 to date Mr. Drakos has served as an Investment Advisor for Inter-M Traders Ltd., Private Equity Fund, focusing on private equity investment in edge technology, renewable energy, medical research, wireless network infrastructure and satellite communications. Mr. Drakos develops new business foundations attracting private equity investors and family offices on next generation technologies, performs technical-against-financial due diligence, evaluates structures global business expansion strategies and investment funding and design and delivers international fund syndication programs.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-6 col-xs-12">
-            <div class="single-team">
-              <!-- <img src="img/team/t3.jpeg" alt=""> -->
-              <div class="team-details">
-                <div class="team-inner">                  
-                  <h4 class="team-title">Dr. Peter Whitton</h4>
-                  <p>Director</p>
-                  <p class="team-bio">De. Peter Whitton is a well-respected expert in the fields of microbiology and biochemistry with over 20 years’ experience in his field, and is recognized as a leader in the field of plant cell culturing and research. Dr. Whitton has a BSC in Biology with Chemistry and a PhD in Biochemistry. He is a member of the Institute of Biology and a chartered biologist, a member of the Royal Society of Chemistry and a Fellow of the Institute of Biomedical Sciences. Dr. Whitton has wide ranging expertise, having provided advisory services to leading pharmaceutical companies such as GlaxoSmithKline and Boots on regulatory strategy, as well as directing research and providing toxicology advice to Pfizer. Dr. Whitton previously served as director and Chief Scientific Officer for Naturally Scientific Technologies Ltd., where he developed and patented methods for the production of glyceraldehyde from CO2 and the production of Lipids using plant cell culture technologies. Prior to joining Naturally Scientific Dr. Whitton ran and managed his own research organization, Phyto-Research Ltd., for five years and secured a number of patents in the field of plant tissue cultures and natural sciences, as well as providing research and advisory services to leading pharmaceutical companies and universities. During this period Dr. Whitton worked with The Serious and Organized Crime Directorate of the Metropolitan Police with Assistant Commissioner Tarique Gaffur on the development of new drug and explosive detection techniques. Dr. Whitton held the position of senior scientist for a number of years for an organization specializing in the preparation of herbal-based remedies and cosmetics and was responsible for research, quality and conformance with British Pharmacopeia Standards and compliance with Cosmetic Safety regulations. Dr. Whitton has successfully patented many bio-technology patents with a particular focus on the use of plant cell technology for industrial applications. Dr. Whitton was a co-founder and currently services as a director of Lykke Research Ltd., a bio-technology company that has developed and patented a process to produce the API from the Hoodia Gordonii plant from cell cultures for use in the dietary supplements market as an appetite suppressant. He is the co-founder and a director of PhytoCyte Pty, a bio-technology company that has developed a process to produce cannaboids and their API’s from cell cultures for the medicinal and recreational cannabis markets.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-6 col-xs-12" style="">
-            <div class="single-team">
-              <!-- <img class="img-fulid" src="img/team/t4.jpeg" alt=""> -->
-              <div class="team-details">
-                <div class="team-inner">
-                  <h4 class="team-title">Aristotle Popolizio</h4>
-                  <p>Vice President and Secretary</p>
-                  <p class="team-bio">Aristotle Popoliziois the head of Investment Relations at Inter-M Traders Ltd., a family office equity investment fund, with offices in Cyprus and New York City. Mr. Popolizio leads a team in research, raising capital and the development of operational risk management plans, and ensures the company is appropriately and strategically positioned with analysts, investors, and all stakeholders. Mr. Popolizio has a BS in Risk Management and a Minor in International Business from the Smeal college of The Pennsylvania State University. Mr. Popolizio provides advisory services in a wide variety of sectors, including pharmaceutical companies, bio-medical companies, CPA’s, attorneys, and government bodies. Mr. Popolizio holds licenses with FINRA (series 7 and series 66) and NIPR (life insurance, accident and health insurance, property insurance, and casualty insurance).</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Team section End -->
 
-    <!-- Blog Section -->
-    <section id="blog" class="section row">
-      <!-- Container Starts -->
-      <div class="container col-md-6 col-sm-12">
-        <div class="section-header">          
-          <h2 class="section-title white-text">News</h2>
-          <hr class="lines" style="border-top-color: white;">
-          <!-- <p class="section-subtitle white-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, dignissimos! <br> Lorem ipsum dolor sit amet, consectetur.</p> -->
-        </div>
-        <div class="row" id="blog-container">
-          <!-- <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 blog-item">
-            <div class="blog-item-wrapper wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
-              <div class="blog-item-img">
-                <a href="">
-                  <img src="img/blog/img1.jpg" alt="">
-                </a>                
-              </div>
-              <div class="blog-item-text"> 
-                <h3>
-                  <a href="">Lorem ipsum dolor sit amet?</a>
-                </h3>
-                <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua... 
-                </p>
-                <a href="" class="btn-rm">Read More <i class="lnr lnr-arrow-right"></i></a>
-              </div>
-            </div>
-          </div> -->
-        </div>
-      </div>
-      <div class="container col-md-6 col-sm-12">
-        <div class="section-header">          
-          <h2 class="section-title white-text">Corporate Governance</h2>
-          <hr class="lines" style="border-top-color: white;">
-          <!-- <p class="section-subtitle white-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, dignissimos! <br> Lorem ipsum dolor sit amet, consectetur.</p> -->
-        </div>
-        <div class="row" id="blog-container">
-          <p class="white-text">
-            Corporate Governance
-The Board of Directors of the Company have the duty to serve as a prudent fiduciary for shareholders and have a long-standing commitment to conduct business in compliance with applicable laws, regulations and in accordance with the highest ethical principles. In this regard, the Board of Directors has adopted governance principles, committee charters and policies to lead our governance practices. We believe that effective corporate governance is critical to the continued and long-term success of Bakhu and contributes to maximized Shareholder value over time.
-          </p>
-          <div class="docs">
-            <h5 class="white-text">
-              Documents
-            </h5>
-            <a href="docs/Bakhu - Code of Ethics_Adopted_2020-9-22.pdf">Code of Ethics</a>
-            |
-            <a href="docs/Bakhu - Audit Committee Charter_Adopted_2020-9-22.pdf">Audit Committee Charter</a>
-          </div>
-          <br>
-          <br>
-          
-          <p class="white-text">
-The guidelines are subject to modification from time to time as the Board of Directors deems appropriate in the best interests of the Company or as required by applicable laws and regulations.
-          </p>
-          <h5 class="docs">Legal Notices</h5>
-          <p>
-<h6 class="docs">Forward-Looking Statements</h6>
-This website contains, and certain matters discussed in Bakhu Holdings, Corp. (“Bakhu”) financials and reports contain, forward-looking statements that could be subject to certain risks and uncertainties that could cause actual results to differ materially from current trends. These include the growth of the Company’s product line markets; the Company's expectations regarding revenues and cash from operations in future periods and expected future operating results; future opportunities for Bakhu; Managements ability to fund operation from cash-flow or financing activities; the Company's ability to fulfill orders in the future; competition; plans or prospects expressed by the management of Bakhu and other such risks cited in the Companies’ filings.
-<br>
-All forward-looking statements are based on information currently available to Bakhu and the Company does not assume any obligation to update or revise any forward-looking statements.
-<br>
-<h6 class="docs">Patents and Trademarks</h6>
-Bakhu retains all copyrights in any text, graphic images, and software owned by Bakhu and hereby authorizes you to electronically copy documents published herein solely for the purpose of transmitting or viewing the information. You may not copy, modify or otherwise alter any files in this website for rebroadcast, or print the information contained therein, without written permission from Bakhu. Except as expressly provided above, nothing contained herein shall be construed as conferring any license or right under any Bakhu copyright, patent or trademark. 
-<br>
-<h6 class="docs">Other</h6>
-The information contained on this website, and any publication posted thereon, including text, images, and links, are provided "AS IS" solely as a convenience to its customers, and WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT. 
-<br>
-Bakhu assumes no responsibility for errors or omissions on this website, or in any publication or other documents posted thereon, which are referenced by, or linked to this website. This could include technical or other inaccuracies, and not all products or services referenced herein are available in all areas. Changes are periodically added to the information, and Bakhu may change the products or services described in this publication at any time.
-<br>
-Should you choose to respond directly to Bakhu with comments, questions, suggestions, ideas or the like relating to this website, or Bakhu products and services, you agree that such information shall be deemed as non-confidential and Bakhu shall have no obligation to respond and be free to reproduce, use, disclose and distribute the information to others without limitation, including but not limited to developing, manufacturing, and marketing products incorporating such information.
 
-          </p>
-        </div>
-      </div>
-    </section>
-    <!-- blog Section End -->
+    <%- include('../partials/footer') %>
 
-    <!-- Contact Section Start -->
-    <section id="contact" class="section" data-stellar-background-ratio="-0.2">      
-      <div class="contact-form">
-        <div class="container">
-          <div class="row">     
-            <div class="col-lg-6 col-sm-6 col-xs-12">
-              <div class="contact-us">
-                <h3>Contact Us</h3>
-                <div class="contact-address">
-                  <p>1 World Trade Center, Long Beach Ca, Suite 140</p>
-                  <p class="phone">Phone: <span>(858) 68-BAKHU/ (858) 682-2548</span></p>
-                  <p class="email">E-mail: <span>info@bakhuholdings.com</span></p>
-                </div>
-
-                <!-- <div class="social-icons">
-                  <ul>
-                    <li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
-                    <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                    <li class="google-plus"><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                    <li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                  </ul>
-                </div> -->
-              </div>
-            </div>     
-            <div class="col-lg-6 col-sm-6 col-xs-12">
-              <div class="contact-block">
-                <form id="contactForm" action="/api/contact" method="POST">
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="form-group">
-                        <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required data-error="Please enter your name">
-                        <div class="help-block with-errors"></div>
-                      </div>                                 
-                    </div>
-                    <div class="col-md-12">
-                      <div class="form-group">
-                        <input type="text" placeholder="Your Email" id="email" class="form-control" name="name" required data-error="Please enter your email">
-                        <div class="help-block with-errors"></div>
-                      </div> 
-                    </div>
-                    <div class="col-md-12">
-                      <div class="form-group">
-                        <input type="text" placeholder="Your Phone Number" id="phone" class="form-control" name="name" required data-error="Please enter your phone number">
-                        <div class="help-block with-errors"></div>
-                      </div> 
-                    </div>
-                    <div class="col-md-12">
-                      <div class="form-group"> 
-                        <textarea class="form-control" id="message" placeholder="Your Message" rows="8" data-error="Write your message" required></textarea>
-                        <div class="help-block with-errors"></div>
-                      </div>
-                      <div class="submit-button text-center">
-                        <button class="btn btn-common" id="submit" type="submit">Send Message</button>
-                        <div id="msgSubmit" class="h3 text-center hidden"></div> 
-                        <div class="clearfix"></div> 
-                      </div>
-                    </div>
-                  </div>            
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>           
-    </section>
-    <!-- Contact Section End -->
-
-    <!-- Footer Section Start -->
-    <footer>          
-      <div class="container">
-        <div class="row">
-          <!-- Footer Links -->
-          <!-- <div class="col-lg-6 col-sm-6 col-xs-12">
-            <ul class="footer-links">
-              <li>
-                <a href="#">Homepage</a>
-              </li>
-              <li>
-                <a href="#">Services</a>
-              </li>
-              <li>
-                <a href="#">About Us</a>
-              </li>
-              <li>
-                <a href="#">Contact</a>
-              </li>
-            </ul>
-          </div> -->
-          <div class="col-lg-6 col-sm-6 col-xs-12">
-            <div class="copyright">
-              <p>All copyrights reserved &copy; 2020 - Designed & Developed by Dev Dragon</p>
-            </div>
-          </div>  
-        </div>
-      </div>
-    </footer>
-    <!-- Footer Section End --> 
-
-    <!-- Go To Top Link -->
-    <a href="#" class="back-to-top">
-      <i class="lnr lnr-arrow-up"></i>
-    </a>
-    
-    <div id="loader">
-      <div class="spinner">
-        <div class="double-bounce1"></div>
-        <div class="double-bounce2"></div>
-      </div>
-    </div>     
-
-    <!-- jQuery first, then Tether, then Bootstrap JS. -->
-    <script src="js/jquery-min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.mixitup.js"></script>
-    <script src="js/nivo-lightbox.js"></script>
-    <script src="js/owl.carousel.js"></script>    
-    <script src="js/jquery.stellar.min.js"></script>    
-    <script src="js/jquery.nav.js"></script>    
-    <script src="js/scrolling-nav.js"></script>    
-    <script src="js/jquery.easing.min.js"></script>    
-    <script src="js/smoothscroll.js"></script>    
-    <script src="js/jquery.slicknav.js"></script>     
-    <script src="js/wow.js"></script>   
-    <script src="js/jquery.vide.js"></script>
-    <script src="js/jquery.counterup.min.js"></script>    
-    <script src="js/jquery.magnific-popup.min.js"></script>    
-    <script src="js/waypoints.min.js"></script>    
-    <script src="js/form-validator.min.js"></script>
-    <script src="js/contact-form-script.js"></script>   
-    <script src="js/main.js"></script>
 
   </body>
 </html>
