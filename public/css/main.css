@@ -116,12 +116,6 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
     font-size: 14px;
     font-weight: 400; }
 
-.lines {
-  margin: auto;
-  width: 70px;
-  position: relative;
-  border-top: 4px solid #58d86d;
-  margin-top: 8px; }
 
 /* ==========================================================================
    2.2 Buttons
@@ -907,6 +901,7 @@ button:focus {
   opacity: 1; }
 
 .single-team {
+  padding-top: 20px;
   position: relative;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -936,7 +931,7 @@ button:focus {
     .single-team .team-details p {
       color: #333; }
     .single-team .team-details .team-bio {
-      font-size: 13px;
+
       height: 500px;
       overflow-y: scroll; }
   .single-team .social-list li {
@@ -972,11 +967,10 @@ button:focus {
   13. Blog 
    ========================================================================== */
 #blog {
-  background-color: white;
-  color: black; }
+
   #blog #blog-container .hrBlog {
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: -52px;
+    margin-right: -52px;
     border-top: 1px solid #868e96; }
   #blog #blog-container .blogItem {
     padding: 0px 15px 15px 15px; }
@@ -991,6 +985,18 @@ button:focus {
       #blog #blog-container .blogItem .blogTitle:hover {
         transition: ease-in-out;
         font-weight: bold; }
+  #blog #blog-container .docs {
+    width: 100%;
+    text-align: center; }
+    #blog #blog-container .docs a {
+      font-size: 20px;
+      color: white;
+      font-style: italic;
+      text-decoration: underline;
+      padding: 30px; }
+      @media (max-width: 676px) {
+        #blog #blog-container .docs a {
+          font-size: 14px; } }
 
 .corpgov {
   padding-left: 100px !important;
@@ -1114,6 +1120,7 @@ footer {
     .copyright p a {
       color: #fff; }
       .copyright p a:hover {
+
         color: #58d86d; }
 
 .dna-strain {
@@ -1412,3 +1419,4 @@ footer {
     width: 100%; }
   100% {
     width: 0%; } }
+

@@ -16,10 +16,12 @@ function submitForm(){
     // Initiate Variables With Form Content
     var name = $("#name").val();
     var email = $("#email").val();
+
     var phone = $("#phone").val();
     var message = $("#message").val();
 
     $.ajax({
+
         method: "POST",
         url: "/contact",
         data: JSON.stringify({
@@ -30,12 +32,13 @@ function submitForm(){
         }),
         // dataType: 'json',
         contentType: "application/json; charset=utf-8",
+
         success : function(data){
             if (data.success == true){
                 formSuccess();
             } else {
                 formError();
-                submitMSG(false,text);
+                submitMSG(false,data.message);
             }
         }
     });
