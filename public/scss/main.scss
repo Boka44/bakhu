@@ -1348,17 +1348,17 @@ $navTextColor: white;
   	}
   }
   #contact{
-		background: #343a40;
-	    color: #fff;
+		// background: #343a40;
+	    color: black;
 	    position: relative;
 	} 
   .form-control{
 	 	width: 100%;
 		margin-bottom: 10px;
 		padding: 14px;
-		border-color: #fff;
+		border-color: black;
 		border-radius: 0px;
-		color: #fff;
+		color: black;
 		background: transparent;
 		font-size: 14px;
 		-webkit-transition: all 0.3s;
@@ -1367,7 +1367,7 @@ $navTextColor: white;
 	}
 	.form-control:focus{
 		box-shadow: none;
-		color: #fff;
+		color: black;
 		border-color: $preset;
 		background: transparent;
 		outline: none;

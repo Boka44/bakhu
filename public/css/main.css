@@ -1052,17 +1052,16 @@ button:focus {
   padding-left: 10px; }
 
 #contact {
-  background: #343a40;
-  color: #fff;
+  color: black;
   position: relative; }
 
 .form-control {
   width: 100%;
   margin-bottom: 10px;
   padding: 14px;
-  border-color: #fff;
+  border-color: black;
   border-radius: 0px;
-  color: #fff;
+  color: black;
   background: transparent;
   font-size: 14px;
   -webkit-transition: all 0.3s;
@@ -1071,7 +1070,7 @@ button:focus {
 
 .form-control:focus {
   box-shadow: none;
-  color: #fff;
+  color: black;
   border-color: #58d86d;
   background: transparent;
   outline: none; }
