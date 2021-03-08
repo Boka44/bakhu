@@ -1561,3 +1561,20 @@ p{
 	  width: 0%;
 	}
   }
+
+#map {
+	height: 400px;
+	width: 500px;
+	@media screen and (max-width: 1200px) {
+		height:400px;
+		width: 400px;
+	}
+	@media screen and (max-width: 991px) {
+		height: 400px;
+		width: 100%;
+	}
+	@media screen and (max-width: 600px) {
+		height: 250px;
+		width: 100%;
+	}
+}

@@ -47,11 +47,11 @@
 
            
             <div class="row">    
-              <div class="col-lg-6 col-sm-6 col-xs-12">
-                <div id="map"></div>
+              <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                <iframe id="map" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/view?zoom=17&center=33.7683%2C-118.1994&key=AIzaSyCvH557aGG8tfyJtq-HQUkifCC9Kpwf1SU"></iframe>
               </div> 
               
-              <div class="col-lg-6 col-sm-6 col-xs-12">
+              <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
                 <div class="contact-block">
                   <form id="contactForm" action="/contact" method="POST">
                     <div class="row">
@@ -94,23 +94,6 @@
       </div>           
     </section>
     <!-- Contact Section End -->
-
-
-
-    <script async
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIOsYPGs1GsqWgfI6XPZq6q1YiCM1gbRs&callback=initMap">
-    </script>
-
-    <script>
-      let map;
-      function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: -34.397, lng: 150.644},
-          zoom: 16
-        });
-      };
-      initMap();
-    </script>
 
     <%- include('../partials/footer') %>
 
