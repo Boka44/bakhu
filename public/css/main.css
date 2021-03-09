@@ -1038,11 +1038,7 @@ button:focus {
   text-decoration: underline; }
 
 #documents {
-  background: url(../img/abracadabra.jpg) fixed no-repeat;
-  background-size: cover;
-  overflow: hidden;
-  position: relative;
-  height: 550px; }
+  padding: 20px !important; }
   #documents p {
     width: 455px;
     margin: 0 auto;

@@ -1318,12 +1318,13 @@ $navTextColor: white;
 }
 
 #documents {
-	background: url(../img/abracadabra.jpg) fixed no-repeat;
-		background-size: cover;
+	// background: url(../img/abracadabra.jpg) fixed no-repeat;
+		// background-size: cover;
 		// color: #fff;
-		overflow: hidden;
-		position: relative;
-		height: 550px;
+		// overflow: hidden;
+		// position: relative;
+		// height: 550px;
+		padding: 20px !important;
 
 		p {
 			width: 455px;
