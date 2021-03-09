@@ -170,61 +170,61 @@
    Press Release
    ========================================================================== */
 
-   function constructBlogItem(date, title, link, isLast) {
-     let parent = $('#blog-container');
-     let dateElement = "<div class='blogDate'>" + date + "</div>";
-     let titleElement = "<a class='blogTitle' href='" + link + "' target='_blank'>" + title + "</a>";
-     let child = "<div class='blogItem col-sm-12'>" + dateElement + titleElement + "</div>";
-     if(!isLast) {
-       child += "<hr class='hrBlog col-sm-12'>";
-     };
-     parent.append(child);
-   };
+  //  function constructBlogItem(date, title, link, isLast) {
+  //    let parent = $('#blog-container');
+  //    let dateElement = "<div class='blogDate'>" + date + "</div>";
+  //    let titleElement = "<a class='blogTitle' href='" + link + "' target='_blank'>" + title + "</a>";
+  //    let child = "<div class='blogItem col-sm-12'>" + dateElement + titleElement + "</div>";
+  //    if(!isLast) {
+  //      child += "<hr class='hrBlog col-sm-12'>";
+  //    };
+  //    parent.append(child);
+  //  };
 
-  let pressArray = [
-    {
-      date: "June 14, 2019",
-      title: "Bakhu Holdings News Release",
-      link: "https://vibraphone-oriole-3498.squarespace.com/s/Bakhu-News-Release-06142019.docx"
-    },
-    {
-      date: "April 30, 2019",
-      title: "Bakhu Holdings 10Q-Quarter ended",
-      link: "https://vibraphone-oriole-3498.squarespace.com/s/Bakhu-10Q-Quarter-ended-4302019.pdf"
-    },
-    {
-      date: "January 31, 2019",
-      title: "Bakhu Holdings 10Q",
-      link: "https://vibraphone-oriole-3498.squarespace.com/s/Bakhu-Holdings-10Q.pdf"
-    },
-    {
-      date: "July 31, 2018",
-      title: "Bakhu Holding 10K-Year ended",
-      link: "https://vibraphone-oriole-3498.squarespace.com/s/Bakhu-10K.pdf"
-    },
-    {
-      date: "April 30, 2018",
-      title: "Bakhu Holdings 10Q-Quarter ended",
-      link: "https://vibraphone-oriole-3498.squarespace.com/s/Bakhu-10Q.pdf"
-    },
-    {
-      date: "December 28, 2018",
-      title: "Bakhu Holdings 8k",
-      link: "https://vibraphone-oriole-3498.squarespace.com/s/BKUH-8-K-SEC-filing-12-27-2018.pdf"
-    },
-    {
-      date: "December 28, 2018",
-      title: "Bakhu Holdings News Release",
-      link: "https://vibraphone-oriole-3498.squarespace.com/s/Bakhu-News-Release"
-    }
-  ];
+  // let pressArray = [
+  //   {
+  //     date: "June 14, 2019",
+  //     title: "Bakhu Holdings News Release",
+  //     link: "https://vibraphone-oriole-3498.squarespace.com/s/Bakhu-News-Release-06142019.docx"
+  //   },
+  //   {
+  //     date: "April 30, 2019",
+  //     title: "Bakhu Holdings 10Q-Quarter ended",
+  //     link: "https://vibraphone-oriole-3498.squarespace.com/s/Bakhu-10Q-Quarter-ended-4302019.pdf"
+  //   },
+  //   {
+  //     date: "January 31, 2019",
+  //     title: "Bakhu Holdings 10Q",
+  //     link: "https://vibraphone-oriole-3498.squarespace.com/s/Bakhu-Holdings-10Q.pdf"
+  //   },
+  //   {
+  //     date: "July 31, 2018",
+  //     title: "Bakhu Holding 10K-Year ended",
+  //     link: "https://vibraphone-oriole-3498.squarespace.com/s/Bakhu-10K.pdf"
+  //   },
+  //   {
+  //     date: "April 30, 2018",
+  //     title: "Bakhu Holdings 10Q-Quarter ended",
+  //     link: "https://vibraphone-oriole-3498.squarespace.com/s/Bakhu-10Q.pdf"
+  //   },
+  //   {
+  //     date: "December 28, 2018",
+  //     title: "Bakhu Holdings 8k",
+  //     link: "https://vibraphone-oriole-3498.squarespace.com/s/BKUH-8-K-SEC-filing-12-27-2018.pdf"
+  //   },
+  //   {
+  //     date: "December 28, 2018",
+  //     title: "Bakhu Holdings News Release",
+  //     link: "https://vibraphone-oriole-3498.squarespace.com/s/Bakhu-News-Release"
+  //   }
+  // ];
 
-  pressArray.forEach((e, i) => {
-    // account for overflow, and create pagination
-    var isLast;
-    pressArray.length == i + 1 ? isLast = true : isLast = false;
-    constructBlogItem(e.date, e.title, e.link, isLast);
-  });
+  // pressArray.forEach((e, i) => {
+  //   // account for overflow, and create pagination
+  //   var isLast;
+  //   pressArray.length == i + 1 ? isLast = true : isLast = false;
+  //   constructBlogItem(e.date, e.title, e.link, isLast);
+  // });
 
 }(jQuery));
 

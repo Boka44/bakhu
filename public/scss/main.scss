@@ -1208,6 +1208,14 @@ $navTextColor: white;
 	color: black;
 
 	#blog-container {
+		display: inline-block;
+		div {
+			font-size: 24px;
+			margin-bottom: 15px;
+		}
+		a {
+			font-size: 18px;
+		}
 		.hrBlog {
 			margin-left: 15px;
 			margin-right: 15px;	
@@ -1354,6 +1362,8 @@ $navTextColor: white;
   		margin-bottom: 45px;
   	}
   	p{
+		  font-size: 24px;
+
   		span{
   			color: $preset;
   			padding-left: 10px;
