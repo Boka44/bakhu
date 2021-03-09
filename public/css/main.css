@@ -343,12 +343,13 @@ button:focus {
    ========================================================================== */
 #hero-area {
   background: url(../img/DNA.jpg) fixed no-repeat;
-  background-size: cover;
+  background-size: contain;
   color: #fff;
   overflow: hidden;
   position: relative; }
   @media screen and (max-width: 1000px) {
     #hero-area {
+      background-size: cover;
       background-position: 80% 0%; } }
   #hero-area .overlay {
     position: absolute;
@@ -452,10 +453,13 @@ button:focus {
     color: #fff !important; }
   .top-nav-collapse .sub-menu {
     display: none;
+    background-color: white;
     width: 100%;
     z-index: 1;
     position: absolute;
-    padding-left: 28px; }
+    padding-left: 28px;
+    min-width: 145px !important;
+    max-width: 210px !important; }
     .top-nav-collapse .sub-menu li:first-child {
       margin-top: 0px; }
     .top-nav-collapse .sub-menu li {
@@ -464,7 +468,7 @@ button:focus {
         color: black; }
   .top-nav-collapse .sub-alt {
     background-color: white;
-    width: 130px; }
+    width: 145px; }
   .top-nav-collapse .sub-menu:hover {
     display: block; }
   .top-nav-collapse .sub-menu li:hover {
@@ -558,7 +562,9 @@ button:focus {
   width: 100%;
   z-index: 1;
   position: absolute;
-  padding-left: 28px; }
+  padding-left: 28px;
+  min-width: 145px !important;
+  max-width: 210px !important; }
   .sub-menu li:first-child {
     margin-top: -20px; }
   .sub-menu li {
@@ -568,7 +574,7 @@ button:focus {
 
 .sub-alt {
   background-color: black;
-  width: 130px; }
+  min-width: 145px !important; }
 
 .sub-menu:hover {
   display: block; }

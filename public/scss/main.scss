@@ -402,12 +402,13 @@ $navTextColor: white;
    ========================================================================== */
 	#hero-area{
 		background: url(../img/DNA.jpg) fixed no-repeat;
-		background-size: cover;
+		background-size: contain;
 		// filter: grayscale(50%);
 		color: #fff;
 		overflow: hidden;
 		position: relative;
 		@media screen and (max-width: 1000px) {
+			background-size: cover;
 			background-position: 80% 0%;
 		}
 		.overlay{
@@ -534,12 +535,13 @@ $navTextColor: white;
 
 		.sub-menu {
 			display: none;
-			// background-color: red;
+			background-color: white;
 			width: 100%;
 			z-index: 1;
 			position: absolute;
 			padding-left: 28px;
-			
+			min-width: 145px !important; 
+			max-width: 210px !important;
 	
 			li:first-child {
 				margin-top: 0px;
@@ -555,7 +557,7 @@ $navTextColor: white;
 		}
 		.sub-alt {
 			background-color: white;
-			width: 130px;
+			width: 145px;
 		}
 	
 		.sub-menu:hover {
@@ -681,7 +683,8 @@ $navTextColor: white;
 		z-index: 1;
 		position: absolute;
 		padding-left: 28px;
-		
+		min-width: 145px !important; 
+		max-width: 210px !important;
 
 		li:first-child {
 			margin-top: -20px;
@@ -697,7 +700,7 @@ $navTextColor: white;
 	}
 	.sub-alt {
 		background-color: $nav-color;
-    	width: 130px;
+    	min-width: 145px !important; 
 	}
 
 	.sub-menu:hover {
