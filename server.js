@@ -21,6 +21,7 @@ const news = require('./routes/news');
 const secFilings = require('./routes/secfilings');
 
 app.use(bodyParser.json());
+require('./config/database');
 
 app.set('view engine', 'ejs');
 
