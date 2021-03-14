@@ -101,6 +101,14 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
   color: #fff;
   margin-bottom: 40px;
   text-align: center; }
+  .section-header img {
+    width: 60%; }
+    @media screen and (max-width: 1000px) {
+      .section-header img {
+        width: 80%; } }
+    @media screen and (max-width: 700px) {
+      .section-header img {
+        width: 100%; } }
   .section-header .section-title {
     font-size: 42px;
     margin-top: 0;
@@ -343,12 +351,13 @@ button:focus {
    ========================================================================== */
 #hero-area {
   background: url(../img/DNA.jpg) fixed no-repeat;
-  background-size: cover;
+  background-size: contain;
   color: #fff;
   overflow: hidden;
   position: relative; }
   @media screen and (max-width: 1000px) {
     #hero-area {
+      background-size: cover;
       background-position: 80% 0%; } }
   #hero-area .overlay {
     position: absolute;
@@ -379,7 +388,7 @@ button:focus {
       margin-top: -25px;
       margin-left: 75px;
       margin-right: 75px;
-      background-color: #4d2275;
+      background-color: #58d86d;
       opacity: .87;
       height: 200px;
       width: 200px;
@@ -452,10 +461,13 @@ button:focus {
     color: #fff !important; }
   .top-nav-collapse .sub-menu {
     display: none;
+    background-color: white;
     width: 100%;
     z-index: 1;
     position: absolute;
-    padding-left: 28px; }
+    padding-left: 28px;
+    min-width: 145px !important;
+    max-width: 210px !important; }
     .top-nav-collapse .sub-menu li:first-child {
       margin-top: 0px; }
     .top-nav-collapse .sub-menu li {
@@ -464,7 +476,7 @@ button:focus {
         color: black; }
   .top-nav-collapse .sub-alt {
     background-color: white;
-    width: 130px; }
+    width: 145px; }
   .top-nav-collapse .sub-menu:hover {
     display: block; }
   .top-nav-collapse .sub-menu li:hover {
@@ -558,7 +570,9 @@ button:focus {
   width: 100%;
   z-index: 1;
   position: absolute;
-  padding-left: 28px; }
+  padding-left: 28px;
+  min-width: 145px !important;
+  max-width: 210px !important; }
   .sub-menu li:first-child {
     margin-top: -20px; }
   .sub-menu li {
@@ -568,7 +582,7 @@ button:focus {
 
 .sub-alt {
   background-color: black;
-  width: 130px; }
+  min-width: 145px !important; }
 
 .sub-menu:hover {
   display: block; }
@@ -968,12 +982,32 @@ button:focus {
     background: #007bb6;
     color: #fff; }
 
+.lab-img {
+  overflow-x: hidden; }
+  @media screen and (max-width: 750px) {
+    .lab-img {
+      margin-top: 40px; } }
+  .lab-img img {
+    min-width: 100%;
+    height: 50vh;
+    float: right; }
+    @media screen and (max-width: 750px) {
+      .lab-img img {
+        height: inherit;
+        float: none;
+        width: 100%; } }
+
 /* ==========================================================================
   13. Blog 
    ========================================================================== */
 #blog {
   background-color: white;
   color: black; }
+  #blog #blog-container div {
+    font-size: 24px;
+    margin-bottom: 15px; }
+  #blog #blog-container a {
+    font-size: 18px; }
   #blog #blog-container .hrBlog {
     margin-left: 15px;
     margin-right: 15px;
@@ -1017,11 +1051,7 @@ button:focus {
   text-decoration: underline; }
 
 #documents {
-  background: url(../img/abracadabra.jpg) fixed no-repeat;
-  background-size: cover;
-  overflow: hidden;
-  position: relative;
-  height: 550px; }
+  padding: 20px !important; }
   #documents p {
     width: 455px;
     margin: 0 auto;
@@ -1047,22 +1077,23 @@ button:focus {
   font-size: 36px;
   margin-bottom: 45px; }
 
-.contact-us p span {
-  color: #58d86d;
-  padding-left: 10px; }
+.contact-us p {
+  font-size: 24px; }
+  .contact-us p span {
+    color: #58d86d;
+    padding-left: 10px; }
 
 #contact {
-  background: #343a40;
-  color: #fff;
+  color: black;
   position: relative; }
 
 .form-control {
   width: 100%;
   margin-bottom: 10px;
   padding: 14px;
-  border-color: #fff;
+  border-color: black;
   border-radius: 0px;
-  color: #fff;
+  color: black;
   background: transparent;
   font-size: 14px;
   -webkit-transition: all 0.3s;
@@ -1071,7 +1102,7 @@ button:focus {
 
 .form-control:focus {
   box-shadow: none;
-  color: #fff;
+  color: black;
   border-color: #58d86d;
   background: transparent;
   outline: none; }
@@ -1412,3 +1443,19 @@ footer {
     width: 100%; }
   100% {
     width: 0%; } }
+
+#map {
+  height: 400px;
+  width: 500px; }
+  @media screen and (max-width: 1200px) {
+    #map {
+      height: 400px;
+      width: 400px; } }
+  @media screen and (max-width: 991px) {
+    #map {
+      height: 400px;
+      width: 100%; } }
+  @media screen and (max-width: 600px) {
+    #map {
+      height: 250px;
+      width: 100%; } }

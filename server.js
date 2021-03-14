@@ -19,8 +19,10 @@ const ourStory = require('./routes/our-story');
 const stockInfo = require('./routes/stock-info');
 const news = require('./routes/news');
 const secFilings = require('./routes/secfilings');
+const sitemap = require('./routes/sitemap');
 
 app.use(bodyParser.json());
+require('./config/database');
 
 app.set('view engine', 'ejs');
 
@@ -34,6 +36,9 @@ app.use('/our-story', ourStory);
 app.use('/stock-info', stockInfo);
 app.use('/news', news);
 app.use('/secfilings', secFilings);
+
+app.use('/sitemap.xml', sitemap);
+app.use('/sitemap', sitemap);
 
 const contactController = require('./controllers/contact');
 app.post('/contact', contactController.sendEmail);
