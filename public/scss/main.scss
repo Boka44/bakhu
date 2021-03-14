@@ -1201,6 +1201,9 @@ $navTextColor: white;
 
    .lab-img {
 	   overflow-x: hidden;
+	   @media screen and (max-width: 750px) {
+			margin-top: 40px;
+		}
 
 	   img {
 		//    width: 93%;
@@ -1209,9 +1212,10 @@ $navTextColor: white;
 		   float: right;
 
 		   @media screen and (max-width: 750px) {
-				height: inherit;
-			   float: none;
-			   width: 100%;
+			   
+			 	height: inherit;
+			    float: none;
+			    width: 100%;
 		   }
 	   }
    }
