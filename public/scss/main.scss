@@ -44,6 +44,12 @@ $navTextColor: white;
     margin-top: 1em;
     margin-left: 1em;
 }
+
+.btn {
+	&:hover {
+		cursor: pointer;
+	}
+}
  
 	
 /* ------------------------------------- */
@@ -430,8 +436,29 @@ $navTextColor: white;
 			background: $preset;
 			opacity: 0.9;
 		}
+		#c-2 {
+			padding: 200px 0 130px;
+
+			@media screen and (max-width: 1000px){
+				// padding-top: 75px;
+    			padding-bottom: 175px;
+			}
+			@media screen and (max-width: 700px){
+				padding-top: 75px;
+    			padding-bottom: 175px;
+			}
+		}
 		.contents{
 			padding: 200px 0 130px;
+
+			// @media screen and (max-width: 1000px){
+			// 	// padding-top: 75px;
+    		// 	padding-bottom: 175px;
+			// }
+			// @media screen and (max-width: 700px){
+			// 	padding-top: 75px;
+    		// 	padding-bottom: 175px;
+			// }
 			h1{	
 				color: #fff;
 				font-size: 42px;
@@ -1351,7 +1378,7 @@ $navTextColor: white;
 			margin: 0 auto;
 			text-align: center;
 			@media(max-width: 696px) {
-				width: 380px;
+				width: auto;
 			}
 		}
 		.pdf-wrapper {
@@ -1360,9 +1387,20 @@ $navTextColor: white;
 			width: 400px;
 			margin: 50px auto;
 
+			@media (max-width: 676px) {
+				width: inherit;
+				margin-bottom: 205px;
+			}
+
 			.pdf-container {
 				width: 200px;
 				display: block;
+				@media (max-width: 676px) {
+					width: inherit;
+					
+   				 	margin-bottom: 25px;
+				}
+
 				.pdf-img {
 					height: 115px;
 					margin-bottom: 10px;
