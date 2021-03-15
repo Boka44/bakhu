@@ -1070,14 +1070,22 @@ button:focus {
     text-align: center; }
     @media (max-width: 696px) {
       #documents p {
-        width: 380px; } }
+        width: auto; } }
   #documents .pdf-wrapper {
     display: flex;
     width: 400px;
     margin: 50px auto; }
+    @media (max-width: 676px) {
+      #documents .pdf-wrapper {
+        width: inherit;
+        margin-bottom: 205px; } }
     #documents .pdf-wrapper .pdf-container {
       width: 200px;
       display: block; }
+      @media (max-width: 676px) {
+        #documents .pdf-wrapper .pdf-container {
+          width: inherit;
+          margin-bottom: 25px; } }
       #documents .pdf-wrapper .pdf-container .pdf-img {
         height: 115px;
         margin-bottom: 10px; }

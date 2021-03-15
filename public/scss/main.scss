@@ -1378,7 +1378,7 @@ $navTextColor: white;
 			margin: 0 auto;
 			text-align: center;
 			@media(max-width: 696px) {
-				width: 380px;
+				width: auto;
 			}
 		}
 		.pdf-wrapper {
@@ -1387,9 +1387,20 @@ $navTextColor: white;
 			width: 400px;
 			margin: 50px auto;
 
+			@media (max-width: 676px) {
+				width: inherit;
+				margin-bottom: 205px;
+			}
+
 			.pdf-container {
 				width: 200px;
 				display: block;
+				@media (max-width: 676px) {
+					width: inherit;
+					
+   				 	margin-bottom: 25px;
+				}
+
 				.pdf-img {
 					height: 115px;
 					margin-bottom: 10px;
