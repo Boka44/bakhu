@@ -1415,6 +1415,18 @@ $navTextColor: white;
 /* ==========================================================================
   14. Contact Us
   ========================================================================== */
+  .contact-us-footer{
+	p{
+		// padding-left: 50px;
+		font-size: 14px;
+		color: $preset;
+
+		span{
+			color: white;
+			padding-left: 10px;
+		}
+	}
+}
   .contact-us{
   	h3{
   		font-size: 36px;

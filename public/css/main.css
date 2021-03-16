@@ -1093,6 +1093,13 @@ button:focus {
 /* ==========================================================================
   14. Contact Us
   ========================================================================== */
+.contact-us-footer p {
+  font-size: 14px;
+  color: #58d86d; }
+  .contact-us-footer p span {
+    color: white;
+    padding-left: 10px; }
+
 .contact-us h3 {
   font-size: 36px;
   margin-bottom: 45px; }
