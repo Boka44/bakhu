@@ -935,6 +935,9 @@ button:focus {
 .single-team:hover .team-details {
   opacity: 1; }
 
+.team-bio {
+  text-align: justify; }
+
 .single-team {
   position: relative;
   -webkit-transition: 0.5s;
