@@ -25,9 +25,12 @@ contactController.sendEmail = (req, res, next) => {
     let phone = req.body.phone;
     let name = req.body.name;
     let message = req.body.message;
+    let jobTitle = req.body.jobTitle;
+    let company = req.body.company;
+    let liquidity = req.body.liquidity;
     let subject = `Message from ${name} at Bakhu Website`;
     // console.log(req)
-    let body = `From ${name} \nEmail: ${email} \nPhone: ${phone}\n\n${message}`;
+    let body = `From ${name} \nEmail: ${email} \nPhone: ${phone} \nJob Title: ${jobTitle} \nCompany: ${company} \nLiquidity: ${liquidity}\n\n${message}`;
 
     // const from = name && email ? `${name} <${email}>` : `${name || email}`
     const mailOptions = {

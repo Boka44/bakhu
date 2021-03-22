@@ -18,6 +18,9 @@ function submitForm(){
     var email = $("#email").val();
     var phone = $("#phone").val();
     var message = $("#message").val();
+    var jobTitle = $("#jobTitle").val();
+    var company = $("#company").val();
+    var liquidity = $("#liquidity").val();
 
     $.ajax({
         method: "POST",
@@ -26,7 +29,10 @@ function submitForm(){
             name: name,
             email: email,
             phone: phone,
-            message: message
+            message: message,
+            jobTitle: jobTitle,
+            company: company,
+            liquidity: liquidity
         }),
         // dataType: 'json',
         contentType: "application/json; charset=utf-8",
