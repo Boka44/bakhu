@@ -10,7 +10,7 @@
     "express": "^4.17.1",
     "moment": "^2.24.0",
     "mongoose": "^5.8.4",
-    "node-sass": "^4.12.0"
+    "node-sass": "^4.13.1"
   },
   "devDependencies": {},
   "scripts": {
