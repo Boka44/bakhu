@@ -11,6 +11,28 @@ $("#contactForm").validator().on("submit", function (event) {
     }
 });
 
+function submitNewsletterForm() {
+    var email = $("#email").val();
+
+    $.ajax({
+        method: "POST",
+        url: "/newsletter",
+        data: JSON.stringify({
+            email: email
+        }),
+        // dataType: 'json',
+        contentType: "application/json; charset=utf-8",
+        success : function(data){
+            if (data.success == true){
+                formSuccess();
+            } else {
+                formError();
+                submitMSG(false,text);
+            }
+        }
+    });
+}
+
 
 function submitForm(){
     // Initiate Variables With Form Content

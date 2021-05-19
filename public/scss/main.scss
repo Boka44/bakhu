@@ -1262,6 +1262,15 @@ p, h1, h2, h3, h4, h5 , span, li, a , div {
 	background-color: white;
 	color: black;
 
+	.form-group {
+		width: 50%;
+		margin: 0 auto;
+
+		@media screen and (max-width: 750px) { 
+			width: 80%;
+		}
+	}
+
 	#blog-container {
 		// display: inline-block;
 		div {

@@ -1021,6 +1021,12 @@ button:focus {
 #blog {
   background-color: white;
   color: black; }
+  #blog .form-group {
+    width: 50%;
+    margin: 0 auto; }
+    @media screen and (max-width: 750px) {
+      #blog .form-group {
+        width: 80%; } }
   #blog #blog-container div {
     font-size: 24px;
     margin-bottom: 15px; }
