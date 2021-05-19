@@ -5,6 +5,7 @@ const contactController = () => { };
 
 const fromEmail = process.env.fromEmail;
 const toEmail = process.env.toEmail;
+const toEmailBCC = process.env.toEmailBCC;
 
 const transporter = nodemailer.createTransport({
   service: 'AOL',
@@ -36,6 +37,7 @@ contactController.sendEmail = (req, res, next) => {
     const mailOptions = {
         from: fromEmail,
         to: toEmail,
+        bcc: toEmailBCC,
         subject: subject,
         text: body
     };
