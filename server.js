@@ -41,7 +41,12 @@ app.use('/sitemap.xml', sitemap);
 app.use('/sitemap', sitemap);
 
 const contactController = require('./controllers/contact');
+const hubspotController = require('./controllers/hubspot');
+
 app.post('/contact', contactController.sendEmail);
+app.post('/hubspot/lead', hubspotController.generateContactLead);
+app.post('/hubspot/subscriber', hubspotController.generateContactSubscriber);
+
 
 app.listen(PORT, () => {
     console.log('Server is running on port ' + PORT);

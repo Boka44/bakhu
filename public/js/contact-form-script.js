@@ -16,7 +16,7 @@ function submitNewsletterForm() {
 
     $.ajax({
         method: "POST",
-        url: "/newsletter",
+        url: "/hubspot/subscriber",
         data: JSON.stringify({
             email: email
         }),
@@ -24,7 +24,7 @@ function submitNewsletterForm() {
         contentType: "application/json; charset=utf-8",
         success : function(data){
             if (data.success == true){
-                formSuccess();
+                formSuccess1();
             } else {
                 formError();
                 submitMSG(false,text);
@@ -67,6 +67,11 @@ function submitForm(){
             }
         }
     });
+}
+
+function formSuccess1(){
+    submitMSG(true, "Message Submitted!")
+    $("#submit").text("Sent");
 }
 
 function formSuccess(){

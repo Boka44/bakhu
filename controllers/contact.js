@@ -1,5 +1,6 @@
 const PASSWORD = process.env.PASSWORD;
 const nodemailer = require('nodemailer');
+const hubspotController = require('./hubspot');
 
 const contactController = () => { };
 
@@ -52,6 +53,8 @@ contactController.sendEmail = (req, res, next) => {
             // res.redirect('back');
         }else{
             console.log('Message sent: ' + info.response);
+            req.body.formattedMessage = body;
+            hubspotController.generateContactLead(req, res, next)
             res.json({
                 success: true,
                 response: info.response
