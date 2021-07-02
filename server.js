@@ -22,7 +22,7 @@ const secFilings = require('./routes/secfilings');
 const sitemap = require('./routes/sitemap');
 
 app.use(bodyParser.json());
-require('./config/database');
+// require('./config/database');
 
 app.set('view engine', 'ejs');
 
