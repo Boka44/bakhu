@@ -1428,6 +1428,42 @@ p, h1, h2, h3, h4, h5 , span, li, a , div {
 		
 }
 
+#banner {
+	#banner-container {
+		div {
+			font-size: 24px;
+			margin-bottom: 15px;		
+		}
+		a {
+			font-size: 18px;
+		}
+
+		p {
+			font-size: 20px;
+		}
+		.hrBlog {
+			margin-left: 15px;
+			margin-right: 15px;	
+			border-top: 1px solid #868e96;
+		}
+
+		.pdf-container {
+			width: 200px;
+			display: block;
+			@media (max-width: 676px) {
+				width: inherit;
+				
+					margin-bottom: 25px;
+			}
+		
+			.pdf-img {
+				height: 115px;
+				margin-bottom: 10px;
+			}
+		}
+
+	}
+}
  
 /* ==========================================================================
   14. Contact Us
